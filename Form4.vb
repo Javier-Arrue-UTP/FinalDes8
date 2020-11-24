@@ -20,10 +20,8 @@ Public Class frmListaPositivos
     Private Sub frmListaPositivos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
-
-
         'TODO: esta línea de código carga datos en la tabla 'FinalDes5DataSet.pacientes' Puede moverla o quitarla según sea necesario.
-        Me.PacientesTableAdapter.Fill(Me.FinalDes5DataSet.pacientes)
+        'Me.PacientesTableAdapter.Fill(Me.FinalDes5DataSet.pacientes)
 
 
     End Sub
