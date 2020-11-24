@@ -22,11 +22,16 @@ Partial Class frmRegistroPaciente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.cbCorregimiento = New System.Windows.Forms.ComboBox()
+        Me.nudEdad = New System.Windows.Forms.NumericUpDown()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
         Me.btnRetroceder1 = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,23 +39,27 @@ Partial Class frmRegistroPaciente
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.radFemenino = New System.Windows.Forms.RadioButton()
         Me.radMasculino = New System.Windows.Forms.RadioButton()
+        Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.txtCelular = New System.Windows.Forms.TextBox()
         Me.txtUbicacion = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtCedula = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.nudEdad = New System.Windows.Forms.NumericUpDown()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.FinalDes5DataSet = New PF_Eq01_tema.finalDes5DataSet()
+        Me.EquiposBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EquiposTableAdapter = New PF_Eq01_tema.finalDes5DataSetTableAdapters.equiposTableAdapter()
         Me.Panel1.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
         CType(Me.nudEdad, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.FinalDes5DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EquiposBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Panel1.Controls.Add(Me.cbCorregimiento)
         Me.Panel1.Controls.Add(Me.nudEdad)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.txtCorreo)
@@ -59,6 +68,7 @@ Partial Class frmRegistroPaciente
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -72,6 +82,24 @@ Partial Class frmRegistroPaciente
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(603, 751)
         Me.Panel1.TabIndex = 0
+        '
+        'cbCorregimiento
+        '
+        Me.cbCorregimiento.DataSource = Me.EquiposBindingSource
+        Me.cbCorregimiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbCorregimiento.FormattingEnabled = True
+        Me.cbCorregimiento.Location = New System.Drawing.Point(106, 446)
+        Me.cbCorregimiento.Name = "cbCorregimiento"
+        Me.cbCorregimiento.Size = New System.Drawing.Size(217, 24)
+        Me.cbCorregimiento.TabIndex = 5
+        '
+        'nudEdad
+        '
+        Me.nudEdad.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nudEdad.Location = New System.Drawing.Point(334, 249)
+        Me.nudEdad.Name = "nudEdad"
+        Me.nudEdad.Size = New System.Drawing.Size(159, 26)
+        Me.nudEdad.TabIndex = 9
         '
         'Label7
         '
@@ -116,6 +144,30 @@ Partial Class frmRegistroPaciente
         Me.btnGuardar.TabIndex = 1
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(329, 221)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(62, 25)
+        Me.Label10.TabIndex = 6
+        Me.Label10.Text = "Edad"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(329, 147)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(81, 25)
+        Me.Label9.TabIndex = 6
+        Me.Label9.Text = "Cedula"
         '
         'Label5
         '
@@ -200,6 +252,14 @@ Partial Class frmRegistroPaciente
         Me.radMasculino.Text = "Masculino"
         Me.radMasculino.UseVisualStyleBackColor = False
         '
+        'txtCedula
+        '
+        Me.txtCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCedula.Location = New System.Drawing.Point(334, 175)
+        Me.txtCedula.Name = "txtCedula"
+        Me.txtCedula.Size = New System.Drawing.Size(145, 28)
+        Me.txtCedula.TabIndex = 1
+        '
         'txtCelular
         '
         Me.txtCelular.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -244,45 +304,31 @@ Partial Class frmRegistroPaciente
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "Logo"
         '
-        'txtCedula
+        'Label4
         '
-        Me.txtCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCedula.Location = New System.Drawing.Point(334, 175)
-        Me.txtCedula.Name = "txtCedula"
-        Me.txtCedula.Size = New System.Drawing.Size(145, 28)
-        Me.txtCedula.TabIndex = 1
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(101, 418)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(147, 25)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Corregimiento"
         '
-        'Label9
+        'FinalDes5DataSet
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(329, 147)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(81, 25)
-        Me.Label9.TabIndex = 6
-        Me.Label9.Text = "Cedula"
+        Me.FinalDes5DataSet.DataSetName = "finalDes5DataSet"
+        Me.FinalDes5DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Label10
+        'EquiposBindingSource
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(329, 221)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(62, 25)
-        Me.Label10.TabIndex = 6
-        Me.Label10.Text = "Edad"
+        Me.EquiposBindingSource.DataMember = "equipos"
+        Me.EquiposBindingSource.DataSource = Me.FinalDes5DataSet
         '
-        'nudEdad
+        'EquiposTableAdapter
         '
-        Me.nudEdad.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nudEdad.Location = New System.Drawing.Point(334, 249)
-        Me.nudEdad.Name = "nudEdad"
-        Me.nudEdad.Size = New System.Drawing.Size(159, 26)
-        Me.nudEdad.TabIndex = 9
+        Me.EquiposTableAdapter.ClearBeforeFill = True
         '
         'frmRegistroPaciente
         '
@@ -296,9 +342,11 @@ Partial Class frmRegistroPaciente
         Me.Text = "Form2"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.nudEdad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.nudEdad, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FinalDes5DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EquiposBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -325,4 +373,9 @@ Partial Class frmRegistroPaciente
     Friend WithEvents txtCedula As TextBox
     Friend WithEvents nudEdad As NumericUpDown
     Friend WithEvents Label10 As Label
+    Friend WithEvents cbCorregimiento As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents FinalDes5DataSet As finalDes5DataSet
+    Friend WithEvents EquiposBindingSource As BindingSource
+    Friend WithEvents EquiposTableAdapter As finalDes5DataSetTableAdapters.equiposTableAdapter
 End Class

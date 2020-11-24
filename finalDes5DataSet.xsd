@@ -236,7 +236,36 @@ SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, 
               <Mapping SourceColumn="estado" DataSetColumn="estado" />
               <Mapping SourceColumn="id_equipo" DataSetColumn="id_equipo" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="finalDes5ConnectionString (MySettings)" DbObjectName="finalDes5.dbo.pacientes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, correo, estado, id_equipo FROM dbo.pacientes where estado= 'pendiente'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="finalDes5ConnectionString (MySettings)" DbObjectName="finalDes5.dbo.pacientes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, correo, estado, id_equipo
+FROM     pacientes
+WHERE  (estado = 'pendiente')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="finalDes5ConnectionString (MySettings)" DbObjectName="finalDes5.dbo.pacientes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy2" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, correo, estado, id_equipo
+FROM     pacientes
+WHERE  (estado = 'pendiente')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
@@ -246,7 +275,7 @@ SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, 
   <xs:element name="finalDes5DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="finalDes5DataSet" msprop:Generator_UserDSName="finalDes5DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="equipos" msprop:Generator_TableClassName="equiposDataTable" msprop:Generator_TableVarName="tableequipos" msprop:Generator_RowChangedName="equiposRowChanged" msprop:Generator_TablePropName="equipos" msprop:Generator_RowDeletingName="equiposRowDeleting" msprop:Generator_RowChangingName="equiposRowChanging" msprop:Generator_RowEvHandlerName="equiposRowChangeEventHandler" msprop:Generator_RowDeletedName="equiposRowDeleted" msprop:Generator_RowClassName="equiposRow" msprop:Generator_UserTableName="equipos" msprop:Generator_RowEvArgName="equiposRowChangeEvent">
+        <xs:element name="equipos" msprop:Generator_TableClassName="equiposDataTable" msprop:Generator_TableVarName="tableequipos" msprop:Generator_TablePropName="equipos" msprop:Generator_RowDeletingName="equiposRowDeleting" msprop:Generator_RowChangingName="equiposRowChanging" msprop:Generator_RowEvHandlerName="equiposRowChangeEventHandler" msprop:Generator_RowDeletedName="equiposRowDeleted" msprop:Generator_UserTableName="equipos" msprop:Generator_RowChangedName="equiposRowChanged" msprop:Generator_RowEvArgName="equiposRowChangeEvent" msprop:Generator_RowClassName="equiposRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_equipo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_equipo" msprop:Generator_ColumnPropNameInRow="id_equipo" msprop:Generator_ColumnPropNameInTable="id_equipoColumn" msprop:Generator_UserColumnName="id_equipo" type="xs:int" />
@@ -260,7 +289,7 @@ SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, 
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="integrantes" msprop:Generator_TableClassName="integrantesDataTable" msprop:Generator_TableVarName="tableintegrantes" msprop:Generator_RowChangedName="integrantesRowChanged" msprop:Generator_TablePropName="integrantes" msprop:Generator_RowDeletingName="integrantesRowDeleting" msprop:Generator_RowChangingName="integrantesRowChanging" msprop:Generator_RowEvHandlerName="integrantesRowChangeEventHandler" msprop:Generator_RowDeletedName="integrantesRowDeleted" msprop:Generator_RowClassName="integrantesRow" msprop:Generator_UserTableName="integrantes" msprop:Generator_RowEvArgName="integrantesRowChangeEvent">
+        <xs:element name="integrantes" msprop:Generator_TableClassName="integrantesDataTable" msprop:Generator_TableVarName="tableintegrantes" msprop:Generator_TablePropName="integrantes" msprop:Generator_RowDeletingName="integrantesRowDeleting" msprop:Generator_RowChangingName="integrantesRowChanging" msprop:Generator_RowEvHandlerName="integrantesRowChangeEventHandler" msprop:Generator_RowDeletedName="integrantesRowDeleted" msprop:Generator_UserTableName="integrantes" msprop:Generator_RowChangedName="integrantesRowChanged" msprop:Generator_RowEvArgName="integrantesRowChangeEvent" msprop:Generator_RowClassName="integrantesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_integrante" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_integrante" msprop:Generator_ColumnPropNameInRow="id_integrante" msprop:Generator_ColumnPropNameInTable="id_integranteColumn" msprop:Generator_UserColumnName="id_integrante" type="xs:int" />
@@ -289,7 +318,7 @@ SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, 
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="pacientes" msprop:Generator_TableClassName="pacientesDataTable" msprop:Generator_TableVarName="tablepacientes" msprop:Generator_RowChangedName="pacientesRowChanged" msprop:Generator_TablePropName="pacientes" msprop:Generator_RowDeletingName="pacientesRowDeleting" msprop:Generator_RowChangingName="pacientesRowChanging" msprop:Generator_RowEvHandlerName="pacientesRowChangeEventHandler" msprop:Generator_RowDeletedName="pacientesRowDeleted" msprop:Generator_RowClassName="pacientesRow" msprop:Generator_UserTableName="pacientes" msprop:Generator_RowEvArgName="pacientesRowChangeEvent">
+        <xs:element name="pacientes" msprop:Generator_TableClassName="pacientesDataTable" msprop:Generator_TableVarName="tablepacientes" msprop:Generator_TablePropName="pacientes" msprop:Generator_RowDeletingName="pacientesRowDeleting" msprop:Generator_RowChangingName="pacientesRowChanging" msprop:Generator_RowEvHandlerName="pacientesRowChangeEventHandler" msprop:Generator_RowDeletedName="pacientesRowDeleted" msprop:Generator_UserTableName="pacientes" msprop:Generator_RowChangedName="pacientesRowChanged" msprop:Generator_RowEvArgName="pacientesRowChangeEvent" msprop:Generator_RowClassName="pacientesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_paciente" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_paciente" msprop:Generator_ColumnPropNameInRow="id_paciente" msprop:Generator_ColumnPropNameInTable="id_pacienteColumn" msprop:Generator_UserColumnName="id_paciente" type="xs:int" />
@@ -371,8 +400,8 @@ SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, 
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK__integrant__id_eq__3C69FB99" msdata:parent="equipos" msdata:child="integrantes" msdata:parentkey="id_equipo" msdata:childkey="id_equipo" msprop:Generator_UserChildTable="integrantes" msprop:Generator_ChildPropName="GetintegrantesRows" msprop:Generator_UserRelationName="FK__integrant__id_eq__3C69FB99" msprop:Generator_RelationVarName="relationFK__integrant__id_eq__3C69FB99" msprop:Generator_UserParentTable="equipos" msprop:Generator_ParentPropName="equiposRow" />
-      <msdata:Relationship name="FK__pacientes__id_eq__398D8EEE" msdata:parent="equipos" msdata:child="pacientes" msdata:parentkey="id_equipo" msdata:childkey="id_equipo" msprop:Generator_UserChildTable="pacientes" msprop:Generator_ChildPropName="GetpacientesRows" msprop:Generator_UserRelationName="FK__pacientes__id_eq__398D8EEE" msprop:Generator_RelationVarName="relationFK__pacientes__id_eq__398D8EEE" msprop:Generator_UserParentTable="equipos" msprop:Generator_ParentPropName="equiposRow" />
+      <msdata:Relationship name="FK__integrant__id_eq__3C69FB99" msdata:parent="equipos" msdata:child="integrantes" msdata:parentkey="id_equipo" msdata:childkey="id_equipo" msprop:Generator_UserChildTable="integrantes" msprop:Generator_ChildPropName="GetintegrantesRows" msprop:Generator_UserRelationName="FK__integrant__id_eq__3C69FB99" msprop:Generator_ParentPropName="equiposRow" msprop:Generator_RelationVarName="relationFK__integrant__id_eq__3C69FB99" msprop:Generator_UserParentTable="equipos" />
+      <msdata:Relationship name="FK__pacientes__id_eq__398D8EEE" msdata:parent="equipos" msdata:child="pacientes" msdata:parentkey="id_equipo" msdata:childkey="id_equipo" msprop:Generator_UserChildTable="pacientes" msprop:Generator_ChildPropName="GetpacientesRows" msprop:Generator_UserRelationName="FK__pacientes__id_eq__398D8EEE" msprop:Generator_ParentPropName="equiposRow" msprop:Generator_RelationVarName="relationFK__pacientes__id_eq__398D8EEE" msprop:Generator_UserParentTable="equipos" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
