@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class ConexionBD
-    Dim conexion As New SqlConnection("Data Source=DESKTOP-UH7R3KP;Initial Catalog=pruebaBD;Integrated Security=True")
+    Dim conexion As New SqlConnection("Data Source=RYL;Initial Catalog=finalDes5;Integrated Security=True")
 
     Sub enlace()
         Try
