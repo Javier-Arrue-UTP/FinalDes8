@@ -58,9 +58,10 @@ Partial Class frmResumen
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(249, 68)
+        Me.Label6.Location = New System.Drawing.Point(187, 55)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(609, 69)
+        Me.Label6.Size = New System.Drawing.Size(494, 55)
         Me.Label6.TabIndex = 25
         Me.Label6.Text = "Resumen Estadistico"
         '
@@ -68,9 +69,10 @@ Partial Class frmResumen
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(341, 187)
+        Me.Label7.Location = New System.Drawing.Point(256, 152)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(286, 25)
+        Me.Label7.Size = New System.Drawing.Size(238, 20)
         Me.Label7.TabIndex = 26
         Me.Label7.Text = "Total de paciente testeados:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -78,9 +80,10 @@ Partial Class frmResumen
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(341, 239)
+        Me.Label1.Location = New System.Drawing.Point(256, 194)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(288, 25)
+        Me.Label1.Size = New System.Drawing.Size(237, 20)
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "Total de pacientes positivos:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -88,9 +91,10 @@ Partial Class frmResumen
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(341, 285)
+        Me.Label2.Location = New System.Drawing.Point(256, 232)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(299, 25)
+        Me.Label2.Size = New System.Drawing.Size(246, 20)
         Me.Label2.TabIndex = 28
         Me.Label2.Text = "Total de pacientes Negativos:"
         '
@@ -98,9 +102,10 @@ Partial Class frmResumen
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader3, Me.ColumnHeader2, Me.ColumnHeader5, Me.ColumnHeader4})
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(148, 440)
+        Me.ListView1.Location = New System.Drawing.Point(111, 358)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(427, 248)
+        Me.ListView1.Size = New System.Drawing.Size(321, 202)
         Me.ListView1.TabIndex = 34
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -133,18 +138,20 @@ Partial Class frmResumen
         '
         'PrintPreviewControl1
         '
-        Me.PrintPreviewControl1.Location = New System.Drawing.Point(870, 726)
+        Me.PrintPreviewControl1.Location = New System.Drawing.Point(652, 590)
+        Me.PrintPreviewControl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PrintPreviewControl1.Name = "PrintPreviewControl1"
-        Me.PrintPreviewControl1.Size = New System.Drawing.Size(8, 8)
+        Me.PrintPreviewControl1.Size = New System.Drawing.Size(6, 6)
         Me.PrintPreviewControl1.TabIndex = 36
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(321, 412)
+        Me.Label3.Location = New System.Drawing.Point(241, 335)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(98, 25)
+        Me.Label3.Size = New System.Drawing.Size(81, 20)
         Me.Label3.TabIndex = 38
         Me.Label3.Text = "Hombres"
         '
@@ -152,9 +159,10 @@ Partial Class frmResumen
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(781, 412)
+        Me.Label4.Location = New System.Drawing.Point(586, 335)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(89, 25)
+        Me.Label4.Size = New System.Drawing.Size(72, 20)
         Me.Label4.TabIndex = 39
         Me.Label4.Text = "Mujeres"
         '
@@ -162,9 +170,10 @@ Partial Class frmResumen
         '
         Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10})
         Me.ListView2.HideSelection = False
-        Me.ListView2.Location = New System.Drawing.Point(643, 440)
+        Me.ListView2.Location = New System.Drawing.Point(482, 358)
+        Me.ListView2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(427, 248)
+        Me.ListView2.Size = New System.Drawing.Size(321, 202)
         Me.ListView2.TabIndex = 40
         Me.ListView2.UseCompatibleStateImageBehavior = False
         Me.ListView2.View = System.Windows.Forms.View.Details
@@ -199,9 +208,10 @@ Partial Class frmResumen
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(705, 187)
+        Me.Label5.Location = New System.Drawing.Point(529, 152)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(108, 25)
+        Me.Label5.Size = New System.Drawing.Size(91, 20)
         Me.Label5.TabIndex = 41
         Me.Label5.Text = "Resultado"
         '
@@ -209,9 +219,10 @@ Partial Class frmResumen
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(705, 239)
+        Me.Label8.Location = New System.Drawing.Point(529, 194)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(108, 25)
+        Me.Label8.Size = New System.Drawing.Size(91, 20)
         Me.Label8.TabIndex = 42
         Me.Label8.Text = "Resultado"
         '
@@ -219,18 +230,20 @@ Partial Class frmResumen
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(705, 285)
+        Me.Label9.Location = New System.Drawing.Point(529, 232)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(108, 25)
+        Me.Label9.Size = New System.Drawing.Size(91, 20)
         Me.Label9.TabIndex = 43
         Me.Label9.Text = "Resultado"
         '
         'btnRetroceder
         '
         Me.btnRetroceder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRetroceder.Location = New System.Drawing.Point(910, 777)
+        Me.btnRetroceder.Location = New System.Drawing.Point(682, 631)
+        Me.btnRetroceder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnRetroceder.Name = "btnRetroceder"
-        Me.btnRetroceder.Size = New System.Drawing.Size(168, 58)
+        Me.btnRetroceder.Size = New System.Drawing.Size(126, 47)
         Me.btnRetroceder.TabIndex = 44
         Me.btnRetroceder.Text = "Retroceder"
         Me.btnRetroceder.UseVisualStyleBackColor = True
@@ -241,23 +254,25 @@ Partial Class frmResumen
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImprimirEnPDFToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1188, 28)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(866, 24)
         Me.MenuStrip1.TabIndex = 45
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ImprimirEnPDFToolStripMenuItem
         '
         Me.ImprimirEnPDFToolStripMenuItem.Name = "ImprimirEnPDFToolStripMenuItem"
-        Me.ImprimirEnPDFToolStripMenuItem.Size = New System.Drawing.Size(130, 24)
+        Me.ImprimirEnPDFToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
         Me.ImprimirEnPDFToolStripMenuItem.Text = "Imprimir en PDF"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(341, 328)
+        Me.Label10.Location = New System.Drawing.Point(256, 266)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(330, 25)
+        Me.Label10.Size = New System.Drawing.Size(274, 20)
         Me.Label10.TabIndex = 46
         Me.Label10.Text = "Total de pacientes Recuperados:"
         '
@@ -265,18 +280,19 @@ Partial Class frmResumen
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(705, 328)
+        Me.Label11.Location = New System.Drawing.Point(529, 266)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(108, 25)
+        Me.Label11.Size = New System.Drawing.Size(91, 20)
         Me.Label11.TabIndex = 47
         Me.Label11.Text = "Resultado"
         '
         'frmResumen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1188, 904)
+        Me.ClientSize = New System.Drawing.Size(866, 649)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.btnRetroceder)
@@ -294,6 +310,7 @@ Partial Class frmResumen
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmResumen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form6"

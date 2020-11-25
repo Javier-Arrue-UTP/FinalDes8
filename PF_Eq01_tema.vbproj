@@ -212,5 +212,44 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\punto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enEspera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\positivos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recuperados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estadistica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\positivos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negativos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

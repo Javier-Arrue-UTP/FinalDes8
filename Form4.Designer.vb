@@ -55,26 +55,29 @@ Partial Class frmListaPositivos
         'TextBox5
         '
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(439, 509)
+        Me.TextBox5.Location = New System.Drawing.Point(329, 414)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 30)
+        Me.TextBox5.Size = New System.Drawing.Size(76, 26)
         Me.TextBox5.TabIndex = 23
         '
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(439, 544)
+        Me.TextBox4.Location = New System.Drawing.Point(329, 442)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 30)
+        Me.TextBox4.Size = New System.Drawing.Size(76, 26)
         Me.TextBox4.TabIndex = 22
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(155, 547)
+        Me.Label5.Location = New System.Drawing.Point(116, 444)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(235, 25)
+        Me.Label5.Size = New System.Drawing.Size(193, 20)
         Me.Label5.TabIndex = 21
         Me.Label5.Text = "Porcentaje de Mujeres:"
         '
@@ -82,27 +85,30 @@ Partial Class frmListaPositivos
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(155, 509)
+        Me.Label4.Location = New System.Drawing.Point(116, 414)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(244, 25)
+        Me.Label4.Size = New System.Drawing.Size(202, 20)
         Me.Label4.TabIndex = 20
         Me.Label4.Text = "Porcentaje de Hombres:"
         '
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(439, 466)
+        Me.TextBox3.Location = New System.Drawing.Point(329, 379)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 30)
+        Me.TextBox3.Size = New System.Drawing.Size(76, 26)
         Me.TextBox3.TabIndex = 19
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(155, 469)
+        Me.Label3.Location = New System.Drawing.Point(116, 381)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(221, 25)
+        Me.Label3.Size = New System.Drawing.Size(182, 20)
         Me.Label3.TabIndex = 18
         Me.Label3.Text = "Total de contagiados:"
         '
@@ -112,36 +118,40 @@ Partial Class frmListaPositivos
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(160, 23)
+        Me.Label6.Location = New System.Drawing.Point(120, 19)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(799, 69)
+        Me.Label6.Size = New System.Drawing.Size(648, 55)
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "Lista de Pacientes Positivos"
         '
         'TextBox6
         '
         Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(337, 377)
+        Me.TextBox6.Location = New System.Drawing.Point(253, 306)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(202, 30)
+        Me.TextBox6.Size = New System.Drawing.Size(152, 26)
         Me.TextBox6.TabIndex = 26
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(155, 377)
+        Me.Label7.Location = New System.Drawing.Point(116, 306)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(176, 25)
+        Me.Label7.Size = New System.Drawing.Size(145, 20)
         Me.Label7.TabIndex = 25
         Me.Label7.Text = "Buscar Paciente:"
         '
         'btnRetroceder
         '
         Me.btnRetroceder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRetroceder.Location = New System.Drawing.Point(913, 558)
+        Me.btnRetroceder.Location = New System.Drawing.Point(685, 453)
+        Me.btnRetroceder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnRetroceder.Name = "btnRetroceder"
-        Me.btnRetroceder.Size = New System.Drawing.Size(168, 58)
+        Me.btnRetroceder.Size = New System.Drawing.Size(126, 47)
         Me.btnRetroceder.TabIndex = 27
         Me.btnRetroceder.Text = "Retroceder"
         Me.btnRetroceder.UseVisualStyleBackColor = True
@@ -149,9 +159,10 @@ Partial Class frmListaPositivos
         'btnRastreo
         '
         Me.btnRastreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRastreo.Location = New System.Drawing.Point(391, 646)
+        Me.btnRastreo.Location = New System.Drawing.Point(293, 525)
+        Me.btnRastreo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnRastreo.Name = "btnRastreo"
-        Me.btnRastreo.Size = New System.Drawing.Size(398, 58)
+        Me.btnRastreo.Size = New System.Drawing.Size(298, 47)
         Me.btnRastreo.TabIndex = 28
         Me.btnRastreo.Text = "Iniciar Rastreo"
         Me.btnRastreo.UseVisualStyleBackColor = True
@@ -159,9 +170,10 @@ Partial Class frmListaPositivos
         'btnReportesAtencion
         '
         Me.btnReportesAtencion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReportesAtencion.Location = New System.Drawing.Point(913, 392)
+        Me.btnReportesAtencion.Location = New System.Drawing.Point(685, 318)
+        Me.btnReportesAtencion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnReportesAtencion.Name = "btnReportesAtencion"
-        Me.btnReportesAtencion.Size = New System.Drawing.Size(168, 73)
+        Me.btnReportesAtencion.Size = New System.Drawing.Size(126, 59)
         Me.btnReportesAtencion.TabIndex = 29
         Me.btnReportesAtencion.Text = "Reportes de atencion"
         Me.btnReportesAtencion.UseVisualStyleBackColor = True
@@ -169,9 +181,10 @@ Partial Class frmListaPositivos
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(913, 471)
+        Me.Button1.Location = New System.Drawing.Point(685, 383)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(168, 81)
+        Me.Button1.Size = New System.Drawing.Size(126, 66)
         Me.Button1.TabIndex = 30
         Me.Button1.Text = "Actualizar a Recuperado"
         Me.Button1.UseVisualStyleBackColor = True
@@ -184,12 +197,13 @@ Partial Class frmListaPositivos
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
         Me.DataGridView1.DataSource = Me.FinalDes5DataSet
-        Me.DataGridView1.Location = New System.Drawing.Point(91, 119)
+        Me.DataGridView1.Location = New System.Drawing.Point(68, 97)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1036, 218)
+        Me.DataGridView1.Size = New System.Drawing.Size(777, 177)
         Me.DataGridView1.TabIndex = 31
         '
         'Column1
@@ -264,10 +278,10 @@ Partial Class frmListaPositivos
         '
         'frmListaPositivos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1199, 762)
+        Me.ClientSize = New System.Drawing.Size(879, 612)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnReportesAtencion)
@@ -282,6 +296,7 @@ Partial Class frmListaPositivos
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmListaPositivos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form4"

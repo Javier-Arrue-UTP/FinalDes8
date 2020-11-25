@@ -48,9 +48,10 @@ Partial Class frmReporte
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(99, 62)
+        Me.Label6.Location = New System.Drawing.Point(74, 50)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(530, 69)
+        Me.Label6.Size = New System.Drawing.Size(432, 55)
         Me.Label6.TabIndex = 25
         Me.Label6.Text = "Lista no atendidos"
         '
@@ -59,9 +60,10 @@ Partial Class frmReporte
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Nombre, Me.Apellido, Me.ColumnHeader1, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader6})
         Me.ListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(146, 175)
+        Me.ListView1.Location = New System.Drawing.Point(110, 142)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(790, 237)
+        Me.ListView1.Size = New System.Drawing.Size(594, 193)
         Me.ListView1.TabIndex = 26
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -101,9 +103,10 @@ Partial Class frmReporte
         Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader5, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10})
         Me.ListView2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListView2.HideSelection = False
-        Me.ListView2.Location = New System.Drawing.Point(135, 619)
+        Me.ListView2.Location = New System.Drawing.Point(101, 503)
+        Me.ListView2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(790, 237)
+        Me.ListView2.Size = New System.Drawing.Size(594, 193)
         Me.ListView2.TabIndex = 27
         Me.ListView2.UseCompatibleStateImageBehavior = False
         Me.ListView2.View = System.Windows.Forms.View.Details
@@ -144,18 +147,20 @@ Partial Class frmReporte
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(99, 525)
+        Me.Label1.Location = New System.Drawing.Point(74, 427)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(445, 69)
+        Me.Label1.Size = New System.Drawing.Size(362, 55)
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Lista atendidos"
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(768, 437)
+        Me.Button1.Location = New System.Drawing.Point(576, 355)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(168, 58)
+        Me.Button1.Size = New System.Drawing.Size(126, 47)
         Me.Button1.TabIndex = 30
         Me.Button1.Text = "Actualizar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -163,24 +168,26 @@ Partial Class frmReporte
         'btnRetroceder
         '
         Me.btnRetroceder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRetroceder.Location = New System.Drawing.Point(757, 862)
+        Me.btnRetroceder.Location = New System.Drawing.Point(568, 700)
+        Me.btnRetroceder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnRetroceder.Name = "btnRetroceder"
-        Me.btnRetroceder.Size = New System.Drawing.Size(168, 58)
+        Me.btnRetroceder.Size = New System.Drawing.Size(126, 47)
         Me.btnRetroceder.TabIndex = 31
         Me.btnRetroceder.Text = "Retroceder"
         Me.btnRetroceder.UseVisualStyleBackColor = True
         '
         'frmReporte
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1074, 1055)
+        Me.ClientSize = New System.Drawing.Size(789, 753)
         Me.Controls.Add(Me.btnRetroceder)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ListView2)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Label6)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmReporte"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form8"
