@@ -26,29 +26,29 @@ Partial Class frmResumen
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lvHombres = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.PrintPreviewControl1 = New System.Windows.Forms.PrintPreviewControl()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ListView2 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.lbTotalTest = New System.Windows.Forms.Label()
+        Me.lbTotalPositivos = New System.Windows.Forms.Label()
+        Me.lbTotalNegativos = New System.Windows.Forms.Label()
         Me.btnRetroceder = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ImprimirEnPDFToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.lbTotalRecuperados = New System.Windows.Forms.Label()
+        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.lvMujeres = New System.Windows.Forms.ListView()
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbEspera = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,7 +68,7 @@ Partial Class frmResumen
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(341, 187)
+        Me.Label7.Location = New System.Drawing.Point(343, 161)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(286, 25)
         Me.Label7.TabIndex = 26
@@ -94,42 +94,20 @@ Partial Class frmResumen
         Me.Label2.TabIndex = 28
         Me.Label2.Text = "Total de pacientes Negativos:"
         '
-        'ListView1
+        'lvHombres
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader3, Me.ColumnHeader2, Me.ColumnHeader5, Me.ColumnHeader4})
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(148, 440)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(427, 248)
-        Me.ListView1.TabIndex = 34
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
+        Me.lvHombres.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader14})
+        Me.lvHombres.HideSelection = False
+        Me.lvHombres.Location = New System.Drawing.Point(56, 440)
+        Me.lvHombres.Name = "lvHombres"
+        Me.lvHombres.Size = New System.Drawing.Size(519, 248)
+        Me.lvHombres.TabIndex = 34
+        Me.lvHombres.UseCompatibleStateImageBehavior = False
+        Me.lvHombres.View = System.Windows.Forms.View.Details
         '
         'ColumnHeader1
         '
-        Me.ColumnHeader1.Text = "Total Testeados"
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.DisplayIndex = 2
-        Me.ColumnHeader3.Text = "Positivos"
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.DisplayIndex = 1
-        Me.ColumnHeader2.Text = "Positivos (%)"
-        Me.ColumnHeader2.Width = 103
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.DisplayIndex = 4
-        Me.ColumnHeader5.Text = "Negativos"
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.DisplayIndex = 3
-        Me.ColumnHeader4.Text = "Negativos (%)"
-        Me.ColumnHeader4.Width = 119
+        Me.ColumnHeader1.Text = "Total"
         '
         'PrintPreviewControl1
         '
@@ -142,7 +120,7 @@ Partial Class frmResumen
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(321, 412)
+        Me.Label3.Location = New System.Drawing.Point(234, 412)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(98, 25)
         Me.Label3.TabIndex = 38
@@ -152,78 +130,41 @@ Partial Class frmResumen
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(781, 412)
+        Me.Label4.Location = New System.Drawing.Point(841, 412)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(89, 25)
         Me.Label4.TabIndex = 39
         Me.Label4.Text = "Mujeres"
         '
-        'ListView2
+        'lbTotalTest
         '
-        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10})
-        Me.ListView2.HideSelection = False
-        Me.ListView2.Location = New System.Drawing.Point(643, 440)
-        Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(427, 248)
-        Me.ListView2.TabIndex = 40
-        Me.ListView2.UseCompatibleStateImageBehavior = False
-        Me.ListView2.View = System.Windows.Forms.View.Details
+        Me.lbTotalTest.AutoSize = True
+        Me.lbTotalTest.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbTotalTest.Location = New System.Drawing.Point(705, 161)
+        Me.lbTotalTest.Name = "lbTotalTest"
+        Me.lbTotalTest.Size = New System.Drawing.Size(108, 25)
+        Me.lbTotalTest.TabIndex = 41
+        Me.lbTotalTest.Text = "Resultado"
         '
-        'ColumnHeader6
+        'lbTotalPositivos
         '
-        Me.ColumnHeader6.Text = "Total Testeados"
+        Me.lbTotalPositivos.AutoSize = True
+        Me.lbTotalPositivos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbTotalPositivos.Location = New System.Drawing.Point(705, 239)
+        Me.lbTotalPositivos.Name = "lbTotalPositivos"
+        Me.lbTotalPositivos.Size = New System.Drawing.Size(108, 25)
+        Me.lbTotalPositivos.TabIndex = 42
+        Me.lbTotalPositivos.Text = "Resultado"
         '
-        'ColumnHeader7
+        'lbTotalNegativos
         '
-        Me.ColumnHeader7.DisplayIndex = 2
-        Me.ColumnHeader7.Text = "Positivos"
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.DisplayIndex = 1
-        Me.ColumnHeader8.Text = "Positivos (%)"
-        Me.ColumnHeader8.Width = 103
-        '
-        'ColumnHeader9
-        '
-        Me.ColumnHeader9.DisplayIndex = 4
-        Me.ColumnHeader9.Text = "Negativos"
-        '
-        'ColumnHeader10
-        '
-        Me.ColumnHeader10.DisplayIndex = 3
-        Me.ColumnHeader10.Text = "Negativos (%)"
-        Me.ColumnHeader10.Width = 119
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(705, 187)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(108, 25)
-        Me.Label5.TabIndex = 41
-        Me.Label5.Text = "Resultado"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(705, 239)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(108, 25)
-        Me.Label8.TabIndex = 42
-        Me.Label8.Text = "Resultado"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(705, 285)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(108, 25)
-        Me.Label9.TabIndex = 43
-        Me.Label9.Text = "Resultado"
+        Me.lbTotalNegativos.AutoSize = True
+        Me.lbTotalNegativos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbTotalNegativos.Location = New System.Drawing.Point(705, 285)
+        Me.lbTotalNegativos.Name = "lbTotalNegativos"
+        Me.lbTotalNegativos.Size = New System.Drawing.Size(108, 25)
+        Me.lbTotalNegativos.TabIndex = 43
+        Me.lbTotalNegativos.Text = "Resultado"
         '
         'btnRetroceder
         '
@@ -241,14 +182,14 @@ Partial Class frmResumen
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImprimirEnPDFToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1188, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1188, 30)
         Me.MenuStrip1.TabIndex = 45
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ImprimirEnPDFToolStripMenuItem
         '
         Me.ImprimirEnPDFToolStripMenuItem.Name = "ImprimirEnPDFToolStripMenuItem"
-        Me.ImprimirEnPDFToolStripMenuItem.Size = New System.Drawing.Size(130, 24)
+        Me.ImprimirEnPDFToolStripMenuItem.Size = New System.Drawing.Size(130, 26)
         Me.ImprimirEnPDFToolStripMenuItem.Text = "Imprimir en PDF"
         '
         'Label10
@@ -261,15 +202,74 @@ Partial Class frmResumen
         Me.Label10.TabIndex = 46
         Me.Label10.Text = "Total de pacientes Recuperados:"
         '
-        'Label11
+        'lbTotalRecuperados
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(705, 328)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(108, 25)
-        Me.Label11.TabIndex = 47
-        Me.Label11.Text = "Resultado"
+        Me.lbTotalRecuperados.AutoSize = True
+        Me.lbTotalRecuperados.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbTotalRecuperados.Location = New System.Drawing.Point(705, 328)
+        Me.lbTotalRecuperados.Name = "lbTotalRecuperados"
+        Me.lbTotalRecuperados.Size = New System.Drawing.Size(108, 25)
+        Me.lbTotalRecuperados.TabIndex = 47
+        Me.lbTotalRecuperados.Text = "Resultado"
+        '
+        'ColumnHeader12
+        '
+        Me.ColumnHeader12.Text = "Positivos (%)"
+        '
+        'ColumnHeader13
+        '
+        Me.ColumnHeader13.Text = "Negativos (%)"
+        '
+        'ColumnHeader14
+        '
+        Me.ColumnHeader14.Text = "Recuperados"
+        '
+        'lvMujeres
+        '
+        Me.lvMujeres.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5})
+        Me.lvMujeres.HideSelection = False
+        Me.lvMujeres.Location = New System.Drawing.Point(625, 440)
+        Me.lvMujeres.Name = "lvMujeres"
+        Me.lvMujeres.Size = New System.Drawing.Size(519, 248)
+        Me.lvMujeres.TabIndex = 34
+        Me.lvMujeres.UseCompatibleStateImageBehavior = False
+        Me.lvMujeres.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Total"
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "Positivos (%)"
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Negativos (%)"
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Recuperados"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(341, 196)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(298, 25)
+        Me.Label5.TabIndex = 26
+        Me.Label5.Text = "Total de paciente pendientes:"
+        '
+        'lbEspera
+        '
+        Me.lbEspera.AutoSize = True
+        Me.lbEspera.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbEspera.Location = New System.Drawing.Point(705, 196)
+        Me.lbEspera.Name = "lbEspera"
+        Me.lbEspera.Size = New System.Drawing.Size(108, 25)
+        Me.lbEspera.TabIndex = 41
+        Me.lbEspera.Text = "Resultado"
         '
         'frmResumen
         '
@@ -277,19 +277,21 @@ Partial Class frmResumen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1188, 904)
-        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.lbTotalRecuperados)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.btnRetroceder)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.ListView2)
+        Me.Controls.Add(Me.lbTotalNegativos)
+        Me.Controls.Add(Me.lbTotalPositivos)
+        Me.Controls.Add(Me.lbEspera)
+        Me.Controls.Add(Me.lbTotalTest)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PrintPreviewControl1)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lvMujeres)
+        Me.Controls.Add(Me.lvHombres)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.MenuStrip1)
@@ -308,27 +310,27 @@ Partial Class frmResumen
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents lvHombres As ListView
     Friend WithEvents PrintPreviewControl1 As PrintPreviewControl
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents ColumnHeader1 As ColumnHeader
-    Friend WithEvents ColumnHeader3 As ColumnHeader
-    Friend WithEvents ColumnHeader2 As ColumnHeader
-    Friend WithEvents ColumnHeader5 As ColumnHeader
-    Friend WithEvents ColumnHeader4 As ColumnHeader
-    Friend WithEvents ListView2 As ListView
-    Friend WithEvents ColumnHeader6 As ColumnHeader
-    Friend WithEvents ColumnHeader7 As ColumnHeader
-    Friend WithEvents ColumnHeader8 As ColumnHeader
-    Friend WithEvents ColumnHeader9 As ColumnHeader
-    Friend WithEvents ColumnHeader10 As ColumnHeader
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents lbTotalTest As Label
+    Friend WithEvents lbTotalPositivos As Label
+    Friend WithEvents lbTotalNegativos As Label
     Friend WithEvents btnRetroceder As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ImprimirEnPDFToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
+    Friend WithEvents lbTotalRecuperados As Label
+    Friend WithEvents ColumnHeader12 As ColumnHeader
+    Friend WithEvents ColumnHeader13 As ColumnHeader
+    Friend WithEvents ColumnHeader14 As ColumnHeader
+    Friend WithEvents lvMujeres As ListView
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents Label5 As Label
+    Friend WithEvents lbEspera As Label
 End Class
