@@ -162,16 +162,16 @@ Partial Class frmListaEspera
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(624, 79)
+        Me.Label7.Location = New System.Drawing.Point(567, 79)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(176, 25)
+        Me.Label7.Size = New System.Drawing.Size(262, 25)
         Me.Label7.TabIndex = 19
-        Me.Label7.Text = "Buscar Paciente:"
+        Me.Label7.Text = "Buscar Paciente (cédula):"
         '
         'txtBusqueda
         '
         Me.txtBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBusqueda.Location = New System.Drawing.Point(849, 79)
+        Me.txtBusqueda.Location = New System.Drawing.Point(859, 79)
         Me.txtBusqueda.Name = "txtBusqueda"
         Me.txtBusqueda.Size = New System.Drawing.Size(224, 30)
         Me.txtBusqueda.TabIndex = 20

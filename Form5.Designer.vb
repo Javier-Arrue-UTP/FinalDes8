@@ -22,52 +22,26 @@ Partial Class frmListaNegativos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btnRetroceder = New System.Windows.Forms.Button()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.Nombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Apellido = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.dgvNegativos = New System.Windows.Forms.DataGridView()
+        Me.txtLimpiar = New System.Windows.Forms.Button()
+        Me.lblAp = New System.Windows.Forms.Label()
+        Me.lblNom = New System.Windows.Forms.Label()
+        Me.txtAp = New System.Windows.Forms.TextBox()
+        Me.btnRet = New System.Windows.Forms.Button()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.lblMuj = New System.Windows.Forms.Label()
+        Me.lblHom = New System.Windows.Forms.Label()
+        Me.lblTotN = New System.Windows.Forms.Label()
+        Me.txtNom = New System.Windows.Forms.TextBox()
+        Me.lblBuscar = New System.Windows.Forms.Label()
+        Me.lbTotNeg = New System.Windows.Forms.Label()
+        Me.lbPHombres = New System.Windows.Forms.Label()
+        Me.lbPMujeres = New System.Windows.Forms.Label()
+        Me.lbCantHombres = New System.Windows.Forms.Label()
+        Me.lbCantMujeres = New System.Windows.Forms.Label()
+        CType(Me.dgvNegativos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btnRetroceder
-        '
-        Me.btnRetroceder.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRetroceder.Location = New System.Drawing.Point(781, 535)
-        Me.btnRetroceder.Name = "btnRetroceder"
-        Me.btnRetroceder.Size = New System.Drawing.Size(168, 58)
-        Me.btnRetroceder.TabIndex = 38
-        Me.btnRetroceder.Text = "Retroceder"
-        Me.btnRetroceder.UseVisualStyleBackColor = True
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(339, 383)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(202, 30)
-        Me.TextBox6.TabIndex = 37
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(157, 383)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(176, 25)
-        Me.Label7.TabIndex = 36
-        Me.Label7.Text = "Buscar Paciente:"
         '
         'Label6
         '
@@ -81,100 +55,167 @@ Partial Class frmListaNegativos
         Me.Label6.TabIndex = 35
         Me.Label6.Text = "Lista de Pacientes Negativos"
         '
-        'TextBox5
+        'dgvNegativos
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(429, 514)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 30)
-        Me.TextBox5.TabIndex = 34
+        Me.dgvNegativos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvNegativos.Location = New System.Drawing.Point(125, 124)
+        Me.dgvNegativos.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvNegativos.Name = "dgvNegativos"
+        Me.dgvNegativos.RowHeadersWidth = 51
+        Me.dgvNegativos.Size = New System.Drawing.Size(852, 247)
+        Me.dgvNegativos.TabIndex = 39
         '
-        'TextBox4
+        'txtLimpiar
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(429, 549)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 30)
-        Me.TextBox4.TabIndex = 33
+        Me.txtLimpiar.Location = New System.Drawing.Point(778, 511)
+        Me.txtLimpiar.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtLimpiar.Name = "txtLimpiar"
+        Me.txtLimpiar.Size = New System.Drawing.Size(199, 25)
+        Me.txtLimpiar.TabIndex = 54
+        Me.txtLimpiar.Text = "Limpiar"
+        Me.txtLimpiar.UseVisualStyleBackColor = True
         '
-        'Label5
+        'lblAp
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(145, 552)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(235, 25)
-        Me.Label5.TabIndex = 32
-        Me.Label5.Text = "Porcentaje de Mujeres:"
+        Me.lblAp.AutoSize = True
+        Me.lblAp.Location = New System.Drawing.Point(765, 450)
+        Me.lblAp.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAp.Name = "lblAp"
+        Me.lblAp.Size = New System.Drawing.Size(58, 17)
+        Me.lblAp.TabIndex = 53
+        Me.lblAp.Text = "Apellido"
         '
-        'Label4
+        'lblNom
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(145, 514)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(244, 25)
-        Me.Label4.TabIndex = 31
-        Me.Label4.Text = "Porcentaje de Hombres:"
+        Me.lblNom.AutoSize = True
+        Me.lblNom.Location = New System.Drawing.Point(765, 418)
+        Me.lblNom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblNom.Name = "lblNom"
+        Me.lblNom.Size = New System.Drawing.Size(58, 17)
+        Me.lblNom.TabIndex = 52
+        Me.lblNom.Text = "Nombre"
         '
-        'TextBox3
+        'txtAp
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(429, 471)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 30)
-        Me.TextBox3.TabIndex = 30
+        Me.txtAp.Location = New System.Drawing.Point(832, 446)
+        Me.txtAp.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtAp.Name = "txtAp"
+        Me.txtAp.Size = New System.Drawing.Size(132, 22)
+        Me.txtAp.TabIndex = 51
         '
-        'Label3
+        'btnRet
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(145, 474)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(197, 25)
-        Me.Label3.TabIndex = 29
-        Me.Label3.Text = "Total de negativos:"
+        Me.btnRet.Location = New System.Drawing.Point(781, 578)
+        Me.btnRet.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnRet.Name = "btnRet"
+        Me.btnRet.Size = New System.Drawing.Size(196, 39)
+        Me.btnRet.TabIndex = 50
+        Me.btnRet.Text = "Retroceder"
+        Me.btnRet.UseVisualStyleBackColor = True
         '
-        'ListView1
+        'btnBuscar
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Nombre, Me.Apellido, Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
-        Me.ListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(150, 129)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(799, 237)
-        Me.ListView1.TabIndex = 28
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
+        Me.btnBuscar.Location = New System.Drawing.Point(778, 477)
+        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(199, 26)
+        Me.btnBuscar.TabIndex = 49
+        Me.btnBuscar.Text = "Buscar"
+        Me.btnBuscar.UseVisualStyleBackColor = True
         '
-        'Nombre
+        'lblMuj
         '
-        Me.Nombre.Text = "Nombre"
-        Me.Nombre.Width = 111
+        Me.lblMuj.AutoSize = True
+        Me.lblMuj.Location = New System.Drawing.Point(122, 486)
+        Me.lblMuj.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMuj.Name = "lblMuj"
+        Me.lblMuj.Size = New System.Drawing.Size(130, 17)
+        Me.lblMuj.TabIndex = 44
+        Me.lblMuj.Text = "Porcentaje Mujeres"
         '
-        'Apellido
+        'lblHom
         '
-        Me.Apellido.Text = "Apellido"
-        Me.Apellido.Width = 122
+        Me.lblHom.AutoSize = True
+        Me.lblHom.Location = New System.Drawing.Point(115, 454)
+        Me.lblHom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblHom.Name = "lblHom"
+        Me.lblHom.Size = New System.Drawing.Size(137, 17)
+        Me.lblHom.TabIndex = 43
+        Me.lblHom.Text = "Porcentaje Hombres"
         '
-        'ColumnHeader1
+        'lblTotN
         '
-        Me.ColumnHeader1.Text = "Ubicacion"
-        Me.ColumnHeader1.Width = 152
+        Me.lblTotN.AutoSize = True
+        Me.lblTotN.Location = New System.Drawing.Point(143, 422)
+        Me.lblTotN.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotN.Name = "lblTotN"
+        Me.lblTotN.Size = New System.Drawing.Size(107, 17)
+        Me.lblTotN.TabIndex = 42
+        Me.lblTotN.Text = "Total Negativos"
         '
-        'ColumnHeader2
+        'txtNom
         '
-        Me.ColumnHeader2.Text = "Celular"
-        Me.ColumnHeader2.Width = 101
+        Me.txtNom.Location = New System.Drawing.Point(832, 414)
+        Me.txtNom.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNom.Name = "txtNom"
+        Me.txtNom.Size = New System.Drawing.Size(132, 22)
+        Me.txtNom.TabIndex = 41
         '
-        'ColumnHeader3
+        'lblBuscar
         '
-        Me.ColumnHeader3.Text = "Genero"
-        Me.ColumnHeader3.Width = 99
+        Me.lblBuscar.AutoSize = True
+        Me.lblBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBuscar.Location = New System.Drawing.Point(666, 391)
+        Me.lblBuscar.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblBuscar.Name = "lblBuscar"
+        Me.lblBuscar.Size = New System.Drawing.Size(126, 17)
+        Me.lblBuscar.TabIndex = 40
+        Me.lblBuscar.Text = "Buscar Paciente"
         '
-        'ColumnHeader4
+        'lbTotNeg
         '
-        Me.ColumnHeader4.Text = "Edad"
+        Me.lbTotNeg.AutoSize = True
+        Me.lbTotNeg.Location = New System.Drawing.Point(268, 422)
+        Me.lbTotNeg.Name = "lbTotNeg"
+        Me.lbTotNeg.Size = New System.Drawing.Size(16, 17)
+        Me.lbTotNeg.TabIndex = 55
+        Me.lbTotNeg.Text = "0"
+        '
+        'lbPHombres
+        '
+        Me.lbPHombres.AutoSize = True
+        Me.lbPHombres.Location = New System.Drawing.Point(320, 454)
+        Me.lbPHombres.Name = "lbPHombres"
+        Me.lbPHombres.Size = New System.Drawing.Size(16, 17)
+        Me.lbPHombres.TabIndex = 55
+        Me.lbPHombres.Text = "0"
+        '
+        'lbPMujeres
+        '
+        Me.lbPMujeres.AutoSize = True
+        Me.lbPMujeres.Location = New System.Drawing.Point(320, 486)
+        Me.lbPMujeres.Name = "lbPMujeres"
+        Me.lbPMujeres.Size = New System.Drawing.Size(16, 17)
+        Me.lbPMujeres.TabIndex = 55
+        Me.lbPMujeres.Text = "0"
+        '
+        'lbCantHombres
+        '
+        Me.lbCantHombres.AutoSize = True
+        Me.lbCantHombres.Location = New System.Drawing.Point(268, 454)
+        Me.lbCantHombres.Name = "lbCantHombres"
+        Me.lbCantHombres.Size = New System.Drawing.Size(16, 17)
+        Me.lbCantHombres.TabIndex = 55
+        Me.lbCantHombres.Text = "0"
+        '
+        'lbCantMujeres
+        '
+        Me.lbCantMujeres.AutoSize = True
+        Me.lbCantMujeres.Location = New System.Drawing.Point(268, 485)
+        Me.lbCantMujeres.Name = "lbCantMujeres"
+        Me.lbCantMujeres.Size = New System.Drawing.Size(16, 17)
+        Me.lbCantMujeres.TabIndex = 55
+        Me.lbCantMujeres.Text = "0"
         '
         'frmListaNegativos
         '
@@ -182,40 +223,48 @@ Partial Class frmListaNegativos
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1095, 657)
-        Me.Controls.Add(Me.btnRetroceder)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.lbCantMujeres)
+        Me.Controls.Add(Me.lbPMujeres)
+        Me.Controls.Add(Me.lbCantHombres)
+        Me.Controls.Add(Me.lbPHombres)
+        Me.Controls.Add(Me.lbTotNeg)
+        Me.Controls.Add(Me.txtLimpiar)
+        Me.Controls.Add(Me.lblAp)
+        Me.Controls.Add(Me.lblNom)
+        Me.Controls.Add(Me.txtAp)
+        Me.Controls.Add(Me.btnRet)
+        Me.Controls.Add(Me.btnBuscar)
+        Me.Controls.Add(Me.lblMuj)
+        Me.Controls.Add(Me.lblHom)
+        Me.Controls.Add(Me.lblTotN)
+        Me.Controls.Add(Me.txtNom)
+        Me.Controls.Add(Me.lblBuscar)
+        Me.Controls.Add(Me.dgvNegativos)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.ListView1)
         Me.Name = "frmListaNegativos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form5"
+        CType(Me.dgvNegativos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnRetroceder As Button
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents Nombre As ColumnHeader
-    Friend WithEvents Apellido As ColumnHeader
-    Friend WithEvents ColumnHeader1 As ColumnHeader
-    Friend WithEvents ColumnHeader2 As ColumnHeader
-    Friend WithEvents ColumnHeader3 As ColumnHeader
-    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents dgvNegativos As DataGridView
+    Friend WithEvents txtLimpiar As Button
+    Friend WithEvents lblAp As Label
+    Friend WithEvents lblNom As Label
+    Friend WithEvents txtAp As TextBox
+    Friend WithEvents btnRet As Button
+    Friend WithEvents btnBuscar As Button
+    Friend WithEvents lblMuj As Label
+    Friend WithEvents lblHom As Label
+    Friend WithEvents lblTotN As Label
+    Friend WithEvents txtNom As TextBox
+    Friend WithEvents lblBuscar As Label
+    Friend WithEvents lbTotNeg As Label
+    Friend WithEvents lbPHombres As Label
+    Friend WithEvents lbPMujeres As Label
+    Friend WithEvents lbCantHombres As Label
+    Friend WithEvents lbCantMujeres As Label
 End Class

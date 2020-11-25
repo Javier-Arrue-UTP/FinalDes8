@@ -24,6 +24,7 @@ Public Class frmRegistroPaciente
         Else
             'Nueva conexion para ejecutar el procedimiento
             Dim conn As New SqlConnection("Data Source=DESKTOP-UH7R3KP;Initial Catalog=finalDes5;Integrated Security=True")
+
             'Objeto comando.
             Dim command As SqlCommand = conn.CreateCommand
             'TIpo de comando

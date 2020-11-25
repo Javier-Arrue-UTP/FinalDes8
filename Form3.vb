@@ -164,7 +164,8 @@ Public Class frmListaEspera
     End Sub
 
     Private Sub txtBusqueda_TextChanged(sender As Object, e As EventArgs) Handles txtBusqueda.TextChanged
-        PacientesBindingSource.Filter = "nombre LIKE '" + txtBusqueda.Text + "%'"
-
+        PacientesBindingSource.Filter = "cedula LIKE '" + txtBusqueda.Text + "%'"
     End Sub
+
+
 End Class
