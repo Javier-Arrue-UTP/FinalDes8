@@ -25,8 +25,6 @@ Partial Class frmMenu
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -34,7 +32,7 @@ Partial Class frmMenu
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.btnVisualizar = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnInicio = New System.Windows.Forms.Button()
         Me.pnlPrincipal = New System.Windows.Forms.Panel()
         Me.pnlRegistrar = New System.Windows.Forms.Panel()
         Me.pnlEspera = New System.Windows.Forms.Panel()
@@ -45,7 +43,6 @@ Partial Class frmMenu
         Me.pnlRecuperados = New System.Windows.Forms.Panel()
         Me.pnlResumen = New System.Windows.Forms.Panel()
         Me.pnlSobreNosotros = New System.Windows.Forms.Panel()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.Label66 = New System.Windows.Forms.Label()
         Me.Label67 = New System.Windows.Forms.Label()
         Me.Panel28 = New System.Windows.Forms.Panel()
@@ -64,7 +61,6 @@ Partial Class frmMenu
         Me.Label64 = New System.Windows.Forms.Label()
         Me.SobreNosotros_btnRetroceder = New System.Windows.Forms.Button()
         Me.Label65 = New System.Windows.Forms.Label()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.Label52 = New System.Windows.Forms.Label()
@@ -72,7 +68,6 @@ Partial Class frmMenu
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.Label48 = New System.Windows.Forms.Label()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
         Me.pnlResumen_btnRetroceder = New System.Windows.Forms.Button()
         Me.Label50 = New System.Windows.Forms.Label()
         Me.Panel20 = New System.Windows.Forms.Panel()
@@ -82,7 +77,6 @@ Partial Class frmMenu
         Me.Label36 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.Recuperados_btnRetroceder = New System.Windows.Forms.Button()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Panel26 = New System.Windows.Forms.Panel()
@@ -92,7 +86,6 @@ Partial Class frmMenu
         Me.Label60 = New System.Windows.Forms.Label()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.Negativos_btnRetroceder = New System.Windows.Forms.Button()
         Me.Label61 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
@@ -107,7 +100,6 @@ Partial Class frmMenu
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PositivoRastreo_btnRetroceder = New System.Windows.Forms.Button()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label39 = New System.Windows.Forms.Label()
@@ -138,7 +130,6 @@ Partial Class frmMenu
         Me.Label25 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.Positivos_btnRetroceder = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Label26 = New System.Windows.Forms.Label()
@@ -149,11 +140,9 @@ Partial Class frmMenu
         Me.Label18 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.Espera_btnRetroceder = New System.Windows.Forms.Button()
         Me.Espera_btnActualizar = New System.Windows.Forms.Button()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Registrar_btnRetroceder = New System.Windows.Forms.Button()
         Me.nudEdad = New System.Windows.Forms.NumericUpDown()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -173,38 +162,64 @@ Partial Class frmMenu
         Me.txtUbicacion = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.btnResumen = New System.Windows.Forms.Button()
         Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.btnListaRecuperados = New System.Windows.Forms.Button()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnListaPositivos = New System.Windows.Forms.Button()
         Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.btnListaNegativos = New System.Windows.Forms.Button()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.btnListaEspera = New System.Windows.Forms.Button()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnRegistrar = New System.Windows.Forms.Button()
+        Me.pnlInicio = New System.Windows.Forms.Panel()
+        Me.Panel30 = New System.Windows.Forms.Panel()
+        Me.Inicio_btnComienza = New System.Windows.Forms.Button()
+        Me.Label72 = New System.Windows.Forms.Label()
+        Me.Label73 = New System.Windows.Forms.Label()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -218,38 +233,49 @@ Partial Class frmMenu
         Me.pnlRecuperados.SuspendLayout()
         Me.pnlResumen.SuspendLayout()
         Me.pnlSobreNosotros.SuspendLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.nudEdad, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        Me.Panel12.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.pnlInicio.SuspendLayout()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.nudEdad, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel11.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel12.SuspendLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel10.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel13.SuspendLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel9.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel8.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -286,33 +312,6 @@ Partial Class frmMenu
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "Cha pero"
         '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImage = Global.PF_Eq01_tema.My.Resources.Resources.minimizar
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
-        Me.Button2.Location = New System.Drawing.Point(793, 9)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(20, 21)
-        Me.Button2.TabIndex = 26
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = Global.PF_Eq01_tema.My.Resources.Resources.equis
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(817, 9)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(28, 21)
-        Me.Button1.TabIndex = 25
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -330,7 +329,7 @@ Partial Class frmMenu
         Me.Panel4.Controls.Add(Me.Panel6)
         Me.Panel4.Controls.Add(Me.btnVisualizar)
         Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Controls.Add(Me.Button3)
+        Me.Panel4.Controls.Add(Me.btnInicio)
         Me.Panel4.Location = New System.Drawing.Point(205, 0)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(432, 39)
@@ -386,18 +385,18 @@ Partial Class frmMenu
         Me.Panel5.Size = New System.Drawing.Size(138, 5)
         Me.Panel5.TabIndex = 25
         '
-        'Button3
+        'btnInicio
         '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(3, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(138, 33)
-        Me.Button3.TabIndex = 25
-        Me.Button3.Text = "Inicio"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnInicio.FlatAppearance.BorderSize = 0
+        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInicio.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInicio.ForeColor = System.Drawing.Color.White
+        Me.btnInicio.Location = New System.Drawing.Point(3, 0)
+        Me.btnInicio.Name = "btnInicio"
+        Me.btnInicio.Size = New System.Drawing.Size(138, 33)
+        Me.btnInicio.TabIndex = 25
+        Me.btnInicio.Text = "Inicio"
+        Me.btnInicio.UseVisualStyleBackColor = True
         '
         'pnlPrincipal
         '
@@ -595,6 +594,7 @@ Partial Class frmMenu
         '
         'pnlSobreNosotros
         '
+        Me.pnlSobreNosotros.Controls.Add(Me.pnlInicio)
         Me.pnlSobreNosotros.Controls.Add(Me.PictureBox22)
         Me.pnlSobreNosotros.Controls.Add(Me.Label66)
         Me.pnlSobreNosotros.Controls.Add(Me.Label67)
@@ -614,21 +614,12 @@ Partial Class frmMenu
         Me.pnlSobreNosotros.Controls.Add(Me.Label64)
         Me.pnlSobreNosotros.Controls.Add(Me.SobreNosotros_btnRetroceder)
         Me.pnlSobreNosotros.Controls.Add(Me.Label65)
+        Me.pnlSobreNosotros.Controls.Add(Me.PictureBox27)
         Me.pnlSobreNosotros.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlSobreNosotros.Location = New System.Drawing.Point(0, 0)
         Me.pnlSobreNosotros.Name = "pnlSobreNosotros"
         Me.pnlSobreNosotros.Size = New System.Drawing.Size(848, 494)
         Me.pnlSobreNosotros.TabIndex = 66
-        '
-        'PictureBox22
-        '
-        Me.PictureBox22.Image = Global.PF_Eq01_tema.My.Resources.Resources.positivos
-        Me.PictureBox22.Location = New System.Drawing.Point(163, 38)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(17, 17)
-        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox22.TabIndex = 74
-        Me.PictureBox22.TabStop = False
         '
         'Label66
         '
@@ -829,7 +820,7 @@ Partial Class frmMenu
         Me.SobreNosotros_btnRetroceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SobreNosotros_btnRetroceder.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SobreNosotros_btnRetroceder.ForeColor = System.Drawing.Color.White
-        Me.SobreNosotros_btnRetroceder.Location = New System.Drawing.Point(347, 394)
+        Me.SobreNosotros_btnRetroceder.Location = New System.Drawing.Point(335, 394)
         Me.SobreNosotros_btnRetroceder.Margin = New System.Windows.Forms.Padding(2)
         Me.SobreNosotros_btnRetroceder.Name = "SobreNosotros_btnRetroceder"
         Me.SobreNosotros_btnRetroceder.Size = New System.Drawing.Size(185, 27)
@@ -848,16 +839,6 @@ Partial Class frmMenu
         Me.Label65.Size = New System.Drawing.Size(120, 19)
         Me.Label65.TabIndex = 28
         Me.Label65.Text = "Sobre Nosotros"
-        '
-        'PictureBox21
-        '
-        Me.PictureBox21.Image = Global.PF_Eq01_tema.My.Resources.Resources.resumen
-        Me.PictureBox21.Location = New System.Drawing.Point(327, 275)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(228, 114)
-        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox21.TabIndex = 63
-        Me.PictureBox21.TabStop = False
         '
         'Label49
         '
@@ -945,15 +926,6 @@ Partial Class frmMenu
         Me.Label48.TabIndex = 56
         Me.Label48.Text = "Total de Pacientes Testeados: 0"
         '
-        'PictureBox20
-        '
-        Me.PictureBox20.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.PictureBox20.Location = New System.Drawing.Point(41, 40)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox20.TabIndex = 51
-        Me.PictureBox20.TabStop = False
-        '
         'pnlResumen_btnRetroceder
         '
         Me.pnlResumen_btnRetroceder.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -1024,9 +996,9 @@ Partial Class frmMenu
         Me.Label35.Location = New System.Drawing.Point(40, 394)
         Me.Label35.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(134, 17)
+        Me.Label35.Size = New System.Drawing.Size(164, 17)
         Me.Label35.TabIndex = 56
-        Me.Label35.Text = "Total de Positivos: 0"
+        Me.Label35.Text = "Total de Recuperados: 0"
         '
         'Label36
         '
@@ -1060,15 +1032,6 @@ Partial Class frmMenu
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(758, 174)
         Me.Panel21.TabIndex = 52
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.BackColor = System.Drawing.Color.ForestGreen
-        Me.PictureBox17.Location = New System.Drawing.Point(41, 40)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox17.TabIndex = 51
-        Me.PictureBox17.TabStop = False
         '
         'Recuperados_btnRetroceder
         '
@@ -1140,9 +1103,9 @@ Partial Class frmMenu
         Me.Label59.Location = New System.Drawing.Point(40, 394)
         Me.Label59.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label59.Name = "Label59"
-        Me.Label59.Size = New System.Drawing.Size(134, 17)
+        Me.Label59.Size = New System.Drawing.Size(145, 17)
         Me.Label59.TabIndex = 56
-        Me.Label59.Text = "Total de Positivos: 0"
+        Me.Label59.Text = "Total de Negativos: 0"
         '
         'Label60
         '
@@ -1176,15 +1139,6 @@ Partial Class frmMenu
         Me.Panel27.Name = "Panel27"
         Me.Panel27.Size = New System.Drawing.Size(758, 174)
         Me.Panel27.TabIndex = 52
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.BackColor = System.Drawing.Color.SteelBlue
-        Me.PictureBox18.Location = New System.Drawing.Point(41, 40)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox18.TabIndex = 51
-        Me.PictureBox18.TabStop = False
         '
         'Negativos_btnRetroceder
         '
@@ -1360,15 +1314,6 @@ Partial Class frmMenu
         Me.Label28.TabIndex = 52
         Me.Label28.Text = "Debes ingresar los datos de las personas que han tenido contacto con Franklin Ivá" &
     "n."
-        '
-        'PictureBox19
-        '
-        Me.PictureBox19.BackColor = System.Drawing.Color.Crimson
-        Me.PictureBox19.Location = New System.Drawing.Point(41, 40)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox19.TabIndex = 51
-        Me.PictureBox19.TabStop = False
         '
         'PositivoRastreo_btnRetroceder
         '
@@ -1753,15 +1698,6 @@ Partial Class frmMenu
         Me.Panel17.Size = New System.Drawing.Size(758, 174)
         Me.Panel17.TabIndex = 52
         '
-        'PictureBox16
-        '
-        Me.PictureBox16.BackColor = System.Drawing.Color.Crimson
-        Me.PictureBox16.Location = New System.Drawing.Point(41, 40)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox16.TabIndex = 51
-        Me.PictureBox16.TabStop = False
-        '
         'Positivos_btnRetroceder
         '
         Me.Positivos_btnRetroceder.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -1885,15 +1821,6 @@ Partial Class frmMenu
         Me.Panel14.Size = New System.Drawing.Size(758, 174)
         Me.Panel14.TabIndex = 52
         '
-        'PictureBox14
-        '
-        Me.PictureBox14.BackColor = System.Drawing.Color.Tomato
-        Me.PictureBox14.Location = New System.Drawing.Point(41, 40)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox14.TabIndex = 51
-        Me.PictureBox14.TabStop = False
-        '
         'Espera_btnRetroceder
         '
         Me.Espera_btnRetroceder.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -1936,15 +1863,6 @@ Partial Class frmMenu
         Me.Label24.Size = New System.Drawing.Size(223, 19)
         Me.Label24.TabIndex = 28
         Me.Label24.Text = "Lista de Pacientes en Espera"
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.BackColor = System.Drawing.Color.Teal
-        Me.PictureBox13.Location = New System.Drawing.Point(41, 40)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox13.TabIndex = 51
-        Me.PictureBox13.TabStop = False
         '
         'Registrar_btnRetroceder
         '
@@ -2194,17 +2112,6 @@ Partial Class frmMenu
         Me.txtNombre.Size = New System.Drawing.Size(186, 24)
         Me.txtNombre.TabIndex = 35
         '
-        'PictureBox15
-        '
-        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox15.Image = Global.PF_Eq01_tema.My.Resources.Resources.virus
-        Me.PictureBox15.Location = New System.Drawing.Point(554, 138)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(236, 224)
-        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox15.TabIndex = 34
-        Me.PictureBox15.TabStop = False
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
@@ -2228,15 +2135,6 @@ Partial Class frmMenu
         Me.Panel11.Size = New System.Drawing.Size(167, 173)
         Me.Panel11.TabIndex = 33
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.PictureBox7.Location = New System.Drawing.Point(7, 7)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox7.TabIndex = 26
-        Me.PictureBox7.TabStop = False
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -2248,17 +2146,6 @@ Partial Class frmMenu
         Me.Label6.TabIndex = 28
         Me.Label6.Text = "Registro" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Estadístico"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox8.Image = Global.PF_Eq01_tema.My.Resources.Resources.estadistica
-        Me.PictureBox8.Location = New System.Drawing.Point(55, 68)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(58, 43)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 26
-        Me.PictureBox8.TabStop = False
         '
         'btnResumen
         '
@@ -2288,15 +2175,6 @@ Partial Class frmMenu
         Me.Panel12.Size = New System.Drawing.Size(167, 173)
         Me.Panel12.TabIndex = 32
         '
-        'PictureBox9
-        '
-        Me.PictureBox9.BackColor = System.Drawing.Color.ForestGreen
-        Me.PictureBox9.Location = New System.Drawing.Point(7, 7)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox9.TabIndex = 26
-        Me.PictureBox9.TabStop = False
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -2308,17 +2186,6 @@ Partial Class frmMenu
         Me.Label7.TabIndex = 28
         Me.Label7.Text = "Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Pacientes Recuperados"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox10.Image = Global.PF_Eq01_tema.My.Resources.Resources.recuperados
-        Me.PictureBox10.Location = New System.Drawing.Point(58, 68)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(58, 43)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox10.TabIndex = 26
-        Me.PictureBox10.TabStop = False
         '
         'btnListaRecuperados
         '
@@ -2348,15 +2215,6 @@ Partial Class frmMenu
         Me.Panel10.Size = New System.Drawing.Size(167, 173)
         Me.Panel10.TabIndex = 30
         '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Crimson
-        Me.PictureBox5.Location = New System.Drawing.Point(7, 7)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox5.TabIndex = 26
-        Me.PictureBox5.TabStop = False
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -2368,17 +2226,6 @@ Partial Class frmMenu
         Me.Label5.TabIndex = 28
         Me.Label5.Text = "Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Pacientes Positivos"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox6.Image = Global.PF_Eq01_tema.My.Resources.Resources.positivos1
-        Me.PictureBox6.Location = New System.Drawing.Point(55, 68)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(58, 43)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 26
-        Me.PictureBox6.TabStop = False
         '
         'btnListaPositivos
         '
@@ -2408,15 +2255,6 @@ Partial Class frmMenu
         Me.Panel13.Size = New System.Drawing.Size(167, 173)
         Me.Panel13.TabIndex = 31
         '
-        'PictureBox11
-        '
-        Me.PictureBox11.BackColor = System.Drawing.Color.SteelBlue
-        Me.PictureBox11.Location = New System.Drawing.Point(7, 7)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox11.TabIndex = 26
-        Me.PictureBox11.TabStop = False
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -2428,17 +2266,6 @@ Partial Class frmMenu
         Me.Label8.TabIndex = 28
         Me.Label8.Text = "Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Pacientes Negativos"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox12.Image = Global.PF_Eq01_tema.My.Resources.Resources.negativos
-        Me.PictureBox12.Location = New System.Drawing.Point(55, 68)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(58, 43)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox12.TabIndex = 26
-        Me.PictureBox12.TabStop = False
         '
         'btnListaNegativos
         '
@@ -2468,15 +2295,6 @@ Partial Class frmMenu
         Me.Panel9.Size = New System.Drawing.Size(167, 173)
         Me.Panel9.TabIndex = 29
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Tomato
-        Me.PictureBox3.Location = New System.Drawing.Point(7, 7)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox3.TabIndex = 26
-        Me.PictureBox3.TabStop = False
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -2488,17 +2306,6 @@ Partial Class frmMenu
         Me.Label4.TabIndex = 28
         Me.Label4.Text = "Ver a los" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Pacientes en Espera"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox4.Image = Global.PF_Eq01_tema.My.Resources.Resources.enEspera
-        Me.PictureBox4.Location = New System.Drawing.Point(58, 68)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(58, 43)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 26
-        Me.PictureBox4.TabStop = False
         '
         'btnListaEspera
         '
@@ -2528,15 +2335,6 @@ Partial Class frmMenu
         Me.Panel8.Size = New System.Drawing.Size(167, 173)
         Me.Panel8.TabIndex = 25
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Teal
-        Me.PictureBox2.Location = New System.Drawing.Point(7, 7)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox2.TabIndex = 26
-        Me.PictureBox2.TabStop = False
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -2548,17 +2346,6 @@ Partial Class frmMenu
         Me.Label3.TabIndex = 28
         Me.Label3.Text = "Registra a los " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Nuevos Pacientes"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Image = Global.PF_Eq01_tema.My.Resources.Resources.register1
-        Me.PictureBox1.Location = New System.Drawing.Point(55, 68)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(58, 43)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 26
-        Me.PictureBox1.TabStop = False
         '
         'btnRegistrar
         '
@@ -2575,6 +2362,407 @@ Partial Class frmMenu
         Me.btnRegistrar.Text = "Registrar"
         Me.btnRegistrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnRegistrar.UseVisualStyleBackColor = False
+        '
+        'pnlInicio
+        '
+        Me.pnlInicio.Controls.Add(Me.Label73)
+        Me.pnlInicio.Controls.Add(Me.PictureBox26)
+        Me.pnlInicio.Controls.Add(Me.Panel30)
+        Me.pnlInicio.Controls.Add(Me.Inicio_btnComienza)
+        Me.pnlInicio.Controls.Add(Me.PictureBox23)
+        Me.pnlInicio.Controls.Add(Me.PictureBox30)
+        Me.pnlInicio.Controls.Add(Me.PictureBox31)
+        Me.pnlInicio.Controls.Add(Me.PictureBox32)
+        Me.pnlInicio.Controls.Add(Me.PictureBox33)
+        Me.pnlInicio.Controls.Add(Me.PictureBox34)
+        Me.pnlInicio.Controls.Add(Me.Label72)
+        Me.pnlInicio.Controls.Add(Me.PictureBox24)
+        Me.pnlInicio.Controls.Add(Me.PictureBox25)
+        Me.pnlInicio.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlInicio.Location = New System.Drawing.Point(0, 0)
+        Me.pnlInicio.Name = "pnlInicio"
+        Me.pnlInicio.Size = New System.Drawing.Size(848, 494)
+        Me.pnlInicio.TabIndex = 84
+        '
+        'Panel30
+        '
+        Me.Panel30.BackColor = System.Drawing.Color.White
+        Me.Panel30.Location = New System.Drawing.Point(352, 154)
+        Me.Panel30.Name = "Panel30"
+        Me.Panel30.Size = New System.Drawing.Size(139, 2)
+        Me.Panel30.TabIndex = 77
+        '
+        'Inicio_btnComienza
+        '
+        Me.Inicio_btnComienza.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Inicio_btnComienza.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Inicio_btnComienza.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Inicio_btnComienza.ForeColor = System.Drawing.Color.White
+        Me.Inicio_btnComienza.Location = New System.Drawing.Point(320, 191)
+        Me.Inicio_btnComienza.Margin = New System.Windows.Forms.Padding(2)
+        Me.Inicio_btnComienza.Name = "Inicio_btnComienza"
+        Me.Inicio_btnComienza.Size = New System.Drawing.Size(206, 46)
+        Me.Inicio_btnComienza.TabIndex = 76
+        Me.Inicio_btnComienza.Text = "Comienza"
+        Me.Inicio_btnComienza.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Inicio_btnComienza.UseVisualStyleBackColor = False
+        '
+        'Label72
+        '
+        Me.Label72.AutoSize = True
+        Me.Label72.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label72.ForeColor = System.Drawing.Color.White
+        Me.Label72.Location = New System.Drawing.Point(201, 100)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(413, 38)
+        Me.Label72.TabIndex = 75
+        Me.Label72.Text = "Trazabilidad del Covid-19"
+        '
+        'Label73
+        '
+        Me.Label73.AutoSize = True
+        Me.Label73.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label73.ForeColor = System.Drawing.Color.White
+        Me.Label73.Location = New System.Drawing.Point(575, 474)
+        Me.Label73.Name = "Label73"
+        Me.Label73.Size = New System.Drawing.Size(270, 16)
+        Me.Label73.TabIndex = 87
+        Me.Label73.Text = "¡Registra y lleva el control de todos los Pacientes!"
+        '
+        'PictureBox26
+        '
+        Me.PictureBox26.Image = Global.PF_Eq01_tema.My.Resources.Resources.covid
+        Me.PictureBox26.Location = New System.Drawing.Point(607, 109)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(27, 23)
+        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox26.TabIndex = 86
+        Me.PictureBox26.TabStop = False
+        '
+        'PictureBox23
+        '
+        Me.PictureBox23.BackColor = System.Drawing.Color.Teal
+        Me.PictureBox23.Location = New System.Drawing.Point(320, 176)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox23.TabIndex = 78
+        Me.PictureBox23.TabStop = False
+        '
+        'PictureBox30
+        '
+        Me.PictureBox30.BackColor = System.Drawing.Color.Tomato
+        Me.PictureBox30.Location = New System.Drawing.Point(336, 176)
+        Me.PictureBox30.Name = "PictureBox30"
+        Me.PictureBox30.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox30.TabIndex = 79
+        Me.PictureBox30.TabStop = False
+        '
+        'PictureBox31
+        '
+        Me.PictureBox31.BackColor = System.Drawing.Color.Crimson
+        Me.PictureBox31.Location = New System.Drawing.Point(352, 176)
+        Me.PictureBox31.Name = "PictureBox31"
+        Me.PictureBox31.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox31.TabIndex = 80
+        Me.PictureBox31.TabStop = False
+        '
+        'PictureBox32
+        '
+        Me.PictureBox32.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.PictureBox32.Location = New System.Drawing.Point(484, 241)
+        Me.PictureBox32.Name = "PictureBox32"
+        Me.PictureBox32.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox32.TabIndex = 81
+        Me.PictureBox32.TabStop = False
+        '
+        'PictureBox33
+        '
+        Me.PictureBox33.BackColor = System.Drawing.Color.ForestGreen
+        Me.PictureBox33.Location = New System.Drawing.Point(500, 241)
+        Me.PictureBox33.Name = "PictureBox33"
+        Me.PictureBox33.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox33.TabIndex = 82
+        Me.PictureBox33.TabStop = False
+        '
+        'PictureBox34
+        '
+        Me.PictureBox34.BackColor = System.Drawing.Color.SteelBlue
+        Me.PictureBox34.Location = New System.Drawing.Point(516, 241)
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox34.TabIndex = 83
+        Me.PictureBox34.TabStop = False
+        '
+        'PictureBox24
+        '
+        Me.PictureBox24.Image = Global.PF_Eq01_tema.My.Resources.Resources.particulas
+        Me.PictureBox24.Location = New System.Drawing.Point(593, -6)
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.Size = New System.Drawing.Size(255, 211)
+        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox24.TabIndex = 84
+        Me.PictureBox24.TabStop = False
+        '
+        'PictureBox25
+        '
+        Me.PictureBox25.Image = Global.PF_Eq01_tema.My.Resources.Resources.humo
+        Me.PictureBox25.Location = New System.Drawing.Point(-4, 254)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(330, 246)
+        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox25.TabIndex = 85
+        Me.PictureBox25.TabStop = False
+        '
+        'PictureBox22
+        '
+        Me.PictureBox22.Image = Global.PF_Eq01_tema.My.Resources.Resources.positivos
+        Me.PictureBox22.Location = New System.Drawing.Point(163, 38)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(17, 17)
+        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox22.TabIndex = 74
+        Me.PictureBox22.TabStop = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.Image = Global.PF_Eq01_tema.My.Resources.Resources.resumen
+        Me.PictureBox21.Location = New System.Drawing.Point(327, 275)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(228, 114)
+        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox21.TabIndex = 63
+        Me.PictureBox21.TabStop = False
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.PictureBox20.Location = New System.Drawing.Point(41, 40)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox20.TabIndex = 51
+        Me.PictureBox20.TabStop = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.BackColor = System.Drawing.Color.ForestGreen
+        Me.PictureBox17.Location = New System.Drawing.Point(41, 40)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox17.TabIndex = 51
+        Me.PictureBox17.TabStop = False
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.BackColor = System.Drawing.Color.SteelBlue
+        Me.PictureBox18.Location = New System.Drawing.Point(41, 40)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox18.TabIndex = 51
+        Me.PictureBox18.TabStop = False
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.BackColor = System.Drawing.Color.Crimson
+        Me.PictureBox19.Location = New System.Drawing.Point(41, 40)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox19.TabIndex = 51
+        Me.PictureBox19.TabStop = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.BackColor = System.Drawing.Color.Crimson
+        Me.PictureBox16.Location = New System.Drawing.Point(41, 40)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox16.TabIndex = 51
+        Me.PictureBox16.TabStop = False
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.BackColor = System.Drawing.Color.Tomato
+        Me.PictureBox14.Location = New System.Drawing.Point(41, 40)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox14.TabIndex = 51
+        Me.PictureBox14.TabStop = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.BackColor = System.Drawing.Color.Teal
+        Me.PictureBox13.Location = New System.Drawing.Point(41, 40)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox13.TabIndex = 51
+        Me.PictureBox13.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox15.Image = Global.PF_Eq01_tema.My.Resources.Resources.virus
+        Me.PictureBox15.Location = New System.Drawing.Point(554, 138)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(236, 224)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox15.TabIndex = 34
+        Me.PictureBox15.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.PictureBox7.Location = New System.Drawing.Point(7, 7)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox7.TabIndex = 26
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox8.Image = Global.PF_Eq01_tema.My.Resources.Resources.estadistica
+        Me.PictureBox8.Location = New System.Drawing.Point(55, 68)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(58, 43)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 26
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.ForestGreen
+        Me.PictureBox9.Location = New System.Drawing.Point(7, 7)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox9.TabIndex = 26
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox10.Image = Global.PF_Eq01_tema.My.Resources.Resources.recuperados
+        Me.PictureBox10.Location = New System.Drawing.Point(58, 68)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(58, 43)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox10.TabIndex = 26
+        Me.PictureBox10.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Crimson
+        Me.PictureBox5.Location = New System.Drawing.Point(7, 7)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox5.TabIndex = 26
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox6.Image = Global.PF_Eq01_tema.My.Resources.Resources.positivos1
+        Me.PictureBox6.Location = New System.Drawing.Point(55, 68)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(58, 43)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 26
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.SteelBlue
+        Me.PictureBox11.Location = New System.Drawing.Point(7, 7)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox11.TabIndex = 26
+        Me.PictureBox11.TabStop = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox12.Image = Global.PF_Eq01_tema.My.Resources.Resources.negativos
+        Me.PictureBox12.Location = New System.Drawing.Point(55, 68)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(58, 43)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox12.TabIndex = 26
+        Me.PictureBox12.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Tomato
+        Me.PictureBox3.Location = New System.Drawing.Point(7, 7)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox3.TabIndex = 26
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox4.Image = Global.PF_Eq01_tema.My.Resources.Resources.enEspera
+        Me.PictureBox4.Location = New System.Drawing.Point(58, 68)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(58, 43)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 26
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Teal
+        Me.PictureBox2.Location = New System.Drawing.Point(7, 7)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox2.TabIndex = 26
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Image = Global.PF_Eq01_tema.My.Resources.Resources.register1
+        Me.PictureBox1.Location = New System.Drawing.Point(55, 68)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(58, 43)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button2.BackgroundImage = Global.PF_Eq01_tema.My.Resources.Resources.minimizar
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.ForeColor = System.Drawing.Color.Transparent
+        Me.Button2.Location = New System.Drawing.Point(793, 9)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(20, 21)
+        Me.Button2.TabIndex = 26
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button1.BackgroundImage = Global.PF_Eq01_tema.My.Resources.Resources.equis
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(817, 9)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(28, 21)
+        Me.Button1.TabIndex = 25
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'PictureBox27
+        '
+        Me.PictureBox27.Image = Global.PF_Eq01_tema.My.Resources.Resources.logoutp3
+        Me.PictureBox27.Location = New System.Drawing.Point(366, 257)
+        Me.PictureBox27.Name = "PictureBox27"
+        Me.PictureBox27.Size = New System.Drawing.Size(123, 101)
+        Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox27.TabIndex = 86
+        Me.PictureBox27.TabStop = False
         '
         'frmMenu
         '
@@ -2613,46 +2801,58 @@ Partial Class frmMenu
         Me.pnlResumen.PerformLayout()
         Me.pnlSobreNosotros.ResumeLayout(False)
         Me.pnlSobreNosotros.PerformLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        CType(Me.nudEdad, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel11.PerformLayout()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        Me.Panel10.ResumeLayout(False)
+        Me.Panel10.PerformLayout()
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel13.PerformLayout()
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel9.PerformLayout()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        Me.pnlInicio.ResumeLayout(False)
+        Me.pnlInicio.PerformLayout()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nudEdad, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel11.ResumeLayout(False)
-        Me.Panel11.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel12.PerformLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel10.ResumeLayout(False)
-        Me.Panel10.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel13.ResumeLayout(False)
-        Me.Panel13.PerformLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel9.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel8.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2671,7 +2871,7 @@ Partial Class frmMenu
     Friend WithEvents Panel6 As Panel
     Friend WithEvents btnVisualizar As Button
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnInicio As Button
     Friend WithEvents Panel8 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label3 As Label
@@ -2840,4 +3040,19 @@ Partial Class frmMenu
     Friend WithEvents Label64 As Label
     Friend WithEvents SobreNosotros_btnRetroceder As Button
     Friend WithEvents Label65 As Label
+    Friend WithEvents pnlInicio As Panel
+    Friend WithEvents Panel30 As Panel
+    Friend WithEvents Inicio_btnComienza As Button
+    Friend WithEvents PictureBox23 As PictureBox
+    Friend WithEvents PictureBox30 As PictureBox
+    Friend WithEvents PictureBox31 As PictureBox
+    Friend WithEvents PictureBox32 As PictureBox
+    Friend WithEvents PictureBox33 As PictureBox
+    Friend WithEvents PictureBox34 As PictureBox
+    Friend WithEvents Label72 As Label
+    Friend WithEvents PictureBox24 As PictureBox
+    Friend WithEvents PictureBox25 As PictureBox
+    Friend WithEvents PictureBox26 As PictureBox
+    Friend WithEvents Label73 As Label
+    Friend WithEvents PictureBox27 As PictureBox
 End Class

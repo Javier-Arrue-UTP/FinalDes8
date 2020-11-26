@@ -1,7 +1,6 @@
 ﻿Public Class frmMenu
     Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        pnlPrincipal.Visible = True
-        pnlRegistrar.Visible = False
+
     End Sub
 
     '-----Panel Menú Principal-----'
@@ -62,6 +61,19 @@
     End Sub
 
     '-----Botones Superiores-----'
+    Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
+        pnlRegistrar.Visible = True
+        pnlEspera.Visible = True
+        pnlPositivo.Visible = True
+        pnlPositivoRastreo.Visible = True
+        pnlPositivoAtendido.Visible = True
+        pnlNegativos.Visible = True
+        pnlRecuperados.Visible = True
+        pnlResumen.Visible = True
+        pnlSobreNosotros.Visible = True
+        pnlInicio.Visible = True
+    End Sub
+
     Private Sub btnVisualizar_Click(sender As Object, e As EventArgs) Handles btnVisualizar.Click
         pnlPrincipal.Visible = True
         pnlRegistrar.Visible = False
@@ -77,6 +89,7 @@
         pnlRecuperados.Visible = True
         pnlResumen.Visible = True
         pnlSobreNosotros.Visible = True
+        pnlInicio.Visible = False
     End Sub
 
     '-----Panel Registrar Paciente-----'
@@ -141,4 +154,21 @@
         pnlRegistrar.Visible = False
     End Sub
 
+    '-----Panel Inicio----'
+    Private Sub Inicio_btnComienza_Click(sender As Object, e As EventArgs) Handles Inicio_btnComienza.Click
+        pnlPrincipal.Visible = True
+        pnlRegistrar.Visible = False
+    End Sub
+
+    '-----Botón para Salir----'
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If MsgBox("¿Desea salir de la aplicación?", vbQuestion + vbYesNo, "Pregunta") = vbYes Then
+            End
+        End If
+    End Sub
+
+    '-----Botón para Minimizar----'
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class

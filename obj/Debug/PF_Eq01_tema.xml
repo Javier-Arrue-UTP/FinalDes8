@@ -22,6 +22,11 @@ PF_Eq01_tema
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:PF_Eq01_tema.My.Resources.Resources.covid">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PF_Eq01_tema.My.Resources.Resources.enEspera">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -37,12 +42,47 @@ PF_Eq01_tema
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PF_Eq01_tema.My.Resources.Resources.humo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PF_Eq01_tema.My.Resources.Resources.inicio">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PF_Eq01_tema.My.Resources.Resources.logoutp3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PF_Eq01_tema.My.Resources.Resources.minimizar">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:PF_Eq01_tema.My.Resources.Resources.negativos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PF_Eq01_tema.My.Resources.Resources.particulas">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PF_Eq01_tema.My.Resources.Resources.portada">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PF_Eq01_tema.My.Resources.Resources.portada2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PF_Eq01_tema.My.Resources.Resources.portada3">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -83,6 +123,11 @@ PF_Eq01_tema
 </summary>
 </member>
 <member name="P:PF_Eq01_tema.My.Resources.Resources.virus">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PF_Eq01_tema.My.Resources.Resources.virus2">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
