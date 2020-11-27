@@ -39,6 +39,7 @@ Public Class frmListaEspera
     Private Sub btnNegativo_Click(sender As Object, e As EventArgs) Handles btnNegativo.Click
 
         Dim opcion = MsgBox("Desea actualizar el estado del paciente a negativo", vbYesNo + vbQuestion, "Confirmación")
+
         If (opcion = DialogResult.Yes) Then
 
             enviarEmail("Usted es NEGATIVO para Covid-19. Recuerde seguir cumpliendo con los consejos para combatir el virus Covid-19.", txtCorreo.Text)

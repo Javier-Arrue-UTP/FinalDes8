@@ -8,6 +8,8 @@ Public Class frmListaNegativos
     Dim cadena As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'FinalDes5DataSet.pacientes' Puede moverla o quitarla según sea necesario.
+        Me.PacientesTableAdapter.Fill(Me.FinalDes5DataSet.pacientes)
         conexion = New SqlConnection("server=(local) ; database=finalDes5 ; integrated security = true")
         Try
             conexion.Open()

@@ -22,6 +22,7 @@ Partial Class frmRecuperados
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnRegresar = New System.Windows.Forms.Button()
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
@@ -41,7 +42,22 @@ Partial Class frmRecuperados
         Me.lbCantHombres = New System.Windows.Forms.Label()
         Me.lbPHombres = New System.Windows.Forms.Label()
         Me.lbTotRecuperados = New System.Windows.Forms.Label()
+        Me.FinalDes5DataSet = New PF_Eq01_tema.finalDes5DataSet()
+        Me.PacientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PacientesTableAdapter = New PF_Eq01_tema.finalDes5DataSetTableAdapters.pacientesTableAdapter()
+        Me.IdpacienteDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ApellidoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CedulaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EdadDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GeneroDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UbicacionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CelularDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CorreoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EstadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvRecuperados, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FinalDes5DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PacientesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnRegresar
@@ -167,10 +183,16 @@ Partial Class frmRecuperados
         '
         'dgvRecuperados
         '
+        Me.dgvRecuperados.AllowUserToAddRows = False
+        Me.dgvRecuperados.AllowUserToDeleteRows = False
+        Me.dgvRecuperados.AutoGenerateColumns = False
         Me.dgvRecuperados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvRecuperados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdpacienteDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.ApellidoDataGridViewTextBoxColumn, Me.CedulaDataGridViewTextBoxColumn, Me.EdadDataGridViewTextBoxColumn, Me.GeneroDataGridViewTextBoxColumn, Me.UbicacionDataGridViewTextBoxColumn, Me.CelularDataGridViewTextBoxColumn, Me.CorreoDataGridViewTextBoxColumn, Me.EstadoDataGridViewTextBoxColumn})
+        Me.dgvRecuperados.DataSource = Me.PacientesBindingSource
         Me.dgvRecuperados.Location = New System.Drawing.Point(143, 83)
         Me.dgvRecuperados.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvRecuperados.Name = "dgvRecuperados"
+        Me.dgvRecuperados.ReadOnly = True
         Me.dgvRecuperados.RowHeadersWidth = 51
         Me.dgvRecuperados.Size = New System.Drawing.Size(715, 186)
         Me.dgvRecuperados.TabIndex = 18
@@ -232,6 +254,110 @@ Partial Class frmRecuperados
         Me.lbTotRecuperados.TabIndex = 60
         Me.lbTotRecuperados.Text = "0"
         '
+        'FinalDes5DataSet
+        '
+        Me.FinalDes5DataSet.DataSetName = "finalDes5DataSet"
+        Me.FinalDes5DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PacientesBindingSource
+        '
+        Me.PacientesBindingSource.DataMember = "pacientes"
+        Me.PacientesBindingSource.DataSource = Me.FinalDes5DataSet
+        '
+        'PacientesTableAdapter
+        '
+        Me.PacientesTableAdapter.ClearBeforeFill = True
+        '
+        'IdpacienteDataGridViewTextBoxColumn
+        '
+        Me.IdpacienteDataGridViewTextBoxColumn.DataPropertyName = "id_paciente"
+        Me.IdpacienteDataGridViewTextBoxColumn.HeaderText = "id_paciente"
+        Me.IdpacienteDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.IdpacienteDataGridViewTextBoxColumn.Name = "IdpacienteDataGridViewTextBoxColumn"
+        Me.IdpacienteDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IdpacienteDataGridViewTextBoxColumn.Width = 125
+        '
+        'NombreDataGridViewTextBoxColumn
+        '
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
+        Me.NombreDataGridViewTextBoxColumn.Width = 125
+        '
+        'ApellidoDataGridViewTextBoxColumn
+        '
+        Me.ApellidoDataGridViewTextBoxColumn.DataPropertyName = "apellido"
+        Me.ApellidoDataGridViewTextBoxColumn.HeaderText = "apellido"
+        Me.ApellidoDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.ApellidoDataGridViewTextBoxColumn.Name = "ApellidoDataGridViewTextBoxColumn"
+        Me.ApellidoDataGridViewTextBoxColumn.ReadOnly = True
+        Me.ApellidoDataGridViewTextBoxColumn.Width = 125
+        '
+        'CedulaDataGridViewTextBoxColumn
+        '
+        Me.CedulaDataGridViewTextBoxColumn.DataPropertyName = "cedula"
+        Me.CedulaDataGridViewTextBoxColumn.HeaderText = "cedula"
+        Me.CedulaDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CedulaDataGridViewTextBoxColumn.Name = "CedulaDataGridViewTextBoxColumn"
+        Me.CedulaDataGridViewTextBoxColumn.ReadOnly = True
+        Me.CedulaDataGridViewTextBoxColumn.Width = 125
+        '
+        'EdadDataGridViewTextBoxColumn
+        '
+        Me.EdadDataGridViewTextBoxColumn.DataPropertyName = "edad"
+        Me.EdadDataGridViewTextBoxColumn.HeaderText = "edad"
+        Me.EdadDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.EdadDataGridViewTextBoxColumn.Name = "EdadDataGridViewTextBoxColumn"
+        Me.EdadDataGridViewTextBoxColumn.ReadOnly = True
+        Me.EdadDataGridViewTextBoxColumn.Width = 125
+        '
+        'GeneroDataGridViewTextBoxColumn
+        '
+        Me.GeneroDataGridViewTextBoxColumn.DataPropertyName = "genero"
+        Me.GeneroDataGridViewTextBoxColumn.HeaderText = "genero"
+        Me.GeneroDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.GeneroDataGridViewTextBoxColumn.Name = "GeneroDataGridViewTextBoxColumn"
+        Me.GeneroDataGridViewTextBoxColumn.ReadOnly = True
+        Me.GeneroDataGridViewTextBoxColumn.Width = 125
+        '
+        'UbicacionDataGridViewTextBoxColumn
+        '
+        Me.UbicacionDataGridViewTextBoxColumn.DataPropertyName = "ubicacion"
+        Me.UbicacionDataGridViewTextBoxColumn.HeaderText = "ubicacion"
+        Me.UbicacionDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.UbicacionDataGridViewTextBoxColumn.Name = "UbicacionDataGridViewTextBoxColumn"
+        Me.UbicacionDataGridViewTextBoxColumn.ReadOnly = True
+        Me.UbicacionDataGridViewTextBoxColumn.Width = 125
+        '
+        'CelularDataGridViewTextBoxColumn
+        '
+        Me.CelularDataGridViewTextBoxColumn.DataPropertyName = "celular"
+        Me.CelularDataGridViewTextBoxColumn.HeaderText = "celular"
+        Me.CelularDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CelularDataGridViewTextBoxColumn.Name = "CelularDataGridViewTextBoxColumn"
+        Me.CelularDataGridViewTextBoxColumn.ReadOnly = True
+        Me.CelularDataGridViewTextBoxColumn.Width = 125
+        '
+        'CorreoDataGridViewTextBoxColumn
+        '
+        Me.CorreoDataGridViewTextBoxColumn.DataPropertyName = "correo"
+        Me.CorreoDataGridViewTextBoxColumn.HeaderText = "correo"
+        Me.CorreoDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.CorreoDataGridViewTextBoxColumn.Name = "CorreoDataGridViewTextBoxColumn"
+        Me.CorreoDataGridViewTextBoxColumn.ReadOnly = True
+        Me.CorreoDataGridViewTextBoxColumn.Width = 125
+        '
+        'EstadoDataGridViewTextBoxColumn
+        '
+        Me.EstadoDataGridViewTextBoxColumn.DataPropertyName = "estado"
+        Me.EstadoDataGridViewTextBoxColumn.HeaderText = "estado"
+        Me.EstadoDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.EstadoDataGridViewTextBoxColumn.Name = "EstadoDataGridViewTextBoxColumn"
+        Me.EstadoDataGridViewTextBoxColumn.ReadOnly = True
+        Me.EstadoDataGridViewTextBoxColumn.Width = 125
+        '
         'frmRecuperados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -260,6 +386,8 @@ Partial Class frmRecuperados
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form9"
         CType(Me.dgvRecuperados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FinalDes5DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PacientesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -284,4 +412,17 @@ Partial Class frmRecuperados
     Friend WithEvents lbCantHombres As Label
     Friend WithEvents lbPHombres As Label
     Friend WithEvents lbTotRecuperados As Label
+    Friend WithEvents FinalDes5DataSet As finalDes5DataSet
+    Friend WithEvents PacientesBindingSource As BindingSource
+    Friend WithEvents PacientesTableAdapter As finalDes5DataSetTableAdapters.pacientesTableAdapter
+    Friend WithEvents IdpacienteDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ApellidoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CedulaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents EdadDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents GeneroDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents UbicacionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CelularDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CorreoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents EstadoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

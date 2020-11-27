@@ -987,6 +987,10 @@ Partial Public Class finalDes5DataSet
         
         Private columnid_equipo As Global.System.Data.DataColumn
         
+        Private columnatendido As Global.System.Data.DataColumn
+        
+        Private columnid_rastreo As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
@@ -1111,6 +1115,22 @@ Partial Public Class finalDes5DataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property atendidoColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnatendido
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property id_rastreoColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnid_rastreo
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -1147,9 +1167,9 @@ Partial Public Class finalDes5DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddpacientesRow(ByVal nombre As String, ByVal apellido As String, ByVal cedula As String, ByVal edad As Integer, ByVal genero As String, ByVal ubicacion As String, ByVal celular As String, ByVal correo As String, ByVal estado As String, ByVal parentequiposRowByFK__pacientes__id_eq__398D8EEE As equiposRow) As pacientesRow
+        Public Overloads Function AddpacientesRow(ByVal nombre As String, ByVal apellido As String, ByVal cedula As String, ByVal edad As Integer, ByVal genero As String, ByVal ubicacion As String, ByVal celular As String, ByVal correo As String, ByVal estado As String, ByVal parentequiposRowByFK__pacientes__id_eq__398D8EEE As equiposRow, ByVal atendido As String, ByVal id_rastreo As Integer) As pacientesRow
             Dim rowpacientesRow As pacientesRow = CType(Me.NewRow,pacientesRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, nombre, apellido, cedula, edad, genero, ubicacion, celular, correo, estado, Nothing}
+            Dim columnValuesArray() As Object = New Object() {Nothing, nombre, apellido, cedula, edad, genero, ubicacion, celular, correo, estado, Nothing, atendido, id_rastreo}
             If (Not (parentequiposRowByFK__pacientes__id_eq__398D8EEE) Is Nothing) Then
                 columnValuesArray(10) = parentequiposRowByFK__pacientes__id_eq__398D8EEE(0)
             End If
@@ -1192,6 +1212,8 @@ Partial Public Class finalDes5DataSet
             Me.columncorreo = MyBase.Columns("correo")
             Me.columnestado = MyBase.Columns("estado")
             Me.columnid_equipo = MyBase.Columns("id_equipo")
+            Me.columnatendido = MyBase.Columns("atendido")
+            Me.columnid_rastreo = MyBase.Columns("id_rastreo")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1219,6 +1241,10 @@ Partial Public Class finalDes5DataSet
             MyBase.Columns.Add(Me.columnestado)
             Me.columnid_equipo = New Global.System.Data.DataColumn("id_equipo", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnid_equipo)
+            Me.columnatendido = New Global.System.Data.DataColumn("atendido", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnatendido)
+            Me.columnid_rastreo = New Global.System.Data.DataColumn("id_rastreo", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnid_rastreo)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnid_paciente}, true))
             Me.columnid_paciente.AutoIncrement = true
             Me.columnid_paciente.AutoIncrementSeed = -1
@@ -1234,6 +1260,7 @@ Partial Public Class finalDes5DataSet
             Me.columncelular.MaxLength = 25
             Me.columncorreo.MaxLength = 25
             Me.columnestado.MaxLength = 10
+            Me.columnatendido.MaxLength = 20
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1761,6 +1788,36 @@ Partial Public Class finalDes5DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property atendido() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablepacientes.atendidoColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'atendido' de la tabla 'pacientes' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablepacientes.atendidoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property id_rastreo() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tablepacientes.id_rastreoColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'id_rastreo' de la tabla 'pacientes' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablepacientes.id_rastreoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Property equiposRow() As equiposRow
             Get
                 Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK__pacientes__id_eq__398D8EEE")),equiposRow)
@@ -1888,6 +1945,30 @@ Partial Public Class finalDes5DataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub Setid_equipoNull()
             Me(Me.tablepacientes.id_equipoColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsatendidoNull() As Boolean
+            Return Me.IsNull(Me.tablepacientes.atendidoColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetatendidoNull()
+            Me(Me.tablepacientes.atendidoColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function Isid_rastreoNull() As Boolean
+            Return Me.IsNull(Me.tablepacientes.id_rastreoColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub Setid_rastreoNull()
+            Me(Me.tablepacientes.id_rastreoColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -2890,21 +2971,25 @@ Namespace finalDes5DataSetTableAdapters
             tableMapping.ColumnMappings.Add("correo", "correo")
             tableMapping.ColumnMappings.Add("estado", "estado")
             tableMapping.ColumnMappings.Add("id_equipo", "id_equipo")
+            tableMapping.ColumnMappings.Add("atendido", "atendido")
+            tableMapping.ColumnMappings.Add("id_rastreo", "id_rastreo")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[pacientes] WHERE (([id_paciente] = @Original_id_paciente) AND "& _ 
-                "((@IsNull_nombre = 1 AND [nombre] IS NULL) OR ([nombre] = @Original_nombre)) AND"& _ 
-                " ((@IsNull_apellido = 1 AND [apellido] IS NULL) OR ([apellido] = @Original_apell"& _ 
-                "ido)) AND ((@IsNull_cedula = 1 AND [cedula] IS NULL) OR ([cedula] = @Original_ce"& _ 
-                "dula)) AND ((@IsNull_edad = 1 AND [edad] IS NULL) OR ([edad] = @Original_edad)) "& _ 
-                "AND ((@IsNull_genero = 1 AND [genero] IS NULL) OR ([genero] = @Original_genero))"& _ 
-                " AND ((@IsNull_ubicacion = 1 AND [ubicacion] IS NULL) OR ([ubicacion] = @Origina"& _ 
-                "l_ubicacion)) AND ((@IsNull_celular = 1 AND [celular] IS NULL) OR ([celular] = @"& _ 
-                "Original_celular)) AND ((@IsNull_correo = 1 AND [correo] IS NULL) OR ([correo] ="& _ 
-                " @Original_correo)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] "& _ 
-                "= @Original_estado)) AND ((@IsNull_id_equipo = 1 AND [id_equipo] IS NULL) OR ([i"& _ 
-                "d_equipo] = @Original_id_equipo)))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [pacientes] WHERE (([id_paciente] = @Original_id_paciente) AND ((@IsN"& _ 
+                "ull_nombre = 1 AND [nombre] IS NULL) OR ([nombre] = @Original_nombre)) AND ((@Is"& _ 
+                "Null_apellido = 1 AND [apellido] IS NULL) OR ([apellido] = @Original_apellido)) "& _ 
+                "AND ((@IsNull_cedula = 1 AND [cedula] IS NULL) OR ([cedula] = @Original_cedula))"& _ 
+                " AND ((@IsNull_edad = 1 AND [edad] IS NULL) OR ([edad] = @Original_edad)) AND (("& _ 
+                "@IsNull_genero = 1 AND [genero] IS NULL) OR ([genero] = @Original_genero)) AND ("& _ 
+                "(@IsNull_ubicacion = 1 AND [ubicacion] IS NULL) OR ([ubicacion] = @Original_ubic"& _ 
+                "acion)) AND ((@IsNull_celular = 1 AND [celular] IS NULL) OR ([celular] = @Origin"& _ 
+                "al_celular)) AND ((@IsNull_correo = 1 AND [correo] IS NULL) OR ([correo] = @Orig"& _ 
+                "inal_correo)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Ori"& _ 
+                "ginal_estado)) AND ((@IsNull_id_equipo = 1 AND [id_equipo] IS NULL) OR ([id_equi"& _ 
+                "po] = @Original_id_equipo)) AND ((@IsNull_atendido = 1 AND [atendido] IS NULL) O"& _ 
+                "R ([atendido] = @Original_atendido)) AND ((@IsNull_id_rastreo = 1 AND [id_rastre"& _ 
+                "o] IS NULL) OR ([id_rastreo] = @Original_id_rastreo)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_id_paciente", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_paciente", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_nombre", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
@@ -2927,14 +3012,18 @@ Namespace finalDes5DataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_estado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "estado", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_id_equipo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_equipo", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_id_equipo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_equipo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_atendido", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "atendido", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_atendido", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "atendido", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_id_rastreo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_rastreo", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_id_rastreo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_rastreo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[pacientes] ([nombre], [apellido], [cedula], [edad], [genero], "& _ 
-                "[ubicacion], [celular], [correo], [estado], [id_equipo]) VALUES (@nombre, @apell"& _ 
-                "ido, @cedula, @edad, @genero, @ubicacion, @celular, @correo, @estado, @id_equipo"& _ 
-                ");"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celul"& _ 
-                "ar, correo, estado, id_equipo FROM pacientes WHERE (id_paciente = SCOPE_IDENTITY"& _ 
-                "())"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [pacientes] ([nombre], [apellido], [cedula], [edad], [genero], [ubica"& _ 
+                "cion], [celular], [correo], [estado], [id_equipo], [atendido], [id_rastreo]) VAL"& _ 
+                "UES (@nombre, @apellido, @cedula, @edad, @genero, @ubicacion, @celular, @correo,"& _ 
+                " @estado, @id_equipo, @atendido, @id_rastreo);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT id_paciente, nombre, apel"& _ 
+                "lido, cedula, edad, genero, ubicacion, celular, correo, estado, id_equipo, atend"& _ 
+                "ido, id_rastreo FROM pacientes WHERE (id_paciente = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@apellido", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "apellido", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -2946,25 +3035,29 @@ Namespace finalDes5DataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@correo", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "correo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@estado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "estado", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@id_equipo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_equipo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@atendido", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "atendido", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@id_rastreo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_rastreo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[pacientes] SET [nombre] = @nombre, [apellido] = @apellido, [cedula]"& _ 
-                " = @cedula, [edad] = @edad, [genero] = @genero, [ubicacion] = @ubicacion, [celul"& _ 
-                "ar] = @celular, [correo] = @correo, [estado] = @estado, [id_equipo] = @id_equipo"& _ 
-                " WHERE (([id_paciente] = @Original_id_paciente) AND ((@IsNull_nombre = 1 AND [no"& _ 
-                "mbre] IS NULL) OR ([nombre] = @Original_nombre)) AND ((@IsNull_apellido = 1 AND "& _ 
-                "[apellido] IS NULL) OR ([apellido] = @Original_apellido)) AND ((@IsNull_cedula ="& _ 
-                " 1 AND [cedula] IS NULL) OR ([cedula] = @Original_cedula)) AND ((@IsNull_edad = "& _ 
-                "1 AND [edad] IS NULL) OR ([edad] = @Original_edad)) AND ((@IsNull_genero = 1 AND"& _ 
-                " [genero] IS NULL) OR ([genero] = @Original_genero)) AND ((@IsNull_ubicacion = 1"& _ 
-                " AND [ubicacion] IS NULL) OR ([ubicacion] = @Original_ubicacion)) AND ((@IsNull_"& _ 
-                "celular = 1 AND [celular] IS NULL) OR ([celular] = @Original_celular)) AND ((@Is"& _ 
-                "Null_correo = 1 AND [correo] IS NULL) OR ([correo] = @Original_correo)) AND ((@I"& _ 
-                "sNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ((@"& _ 
-                "IsNull_id_equipo = 1 AND [id_equipo] IS NULL) OR ([id_equipo] = @Original_id_equ"& _ 
-                "ipo)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, "& _ 
-                "celular, correo, estado, id_equipo FROM pacientes WHERE (id_paciente = @id_pacie"& _ 
-                "nte)"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [pacientes] SET [nombre] = @nombre, [apellido] = @apellido, [cedula] = @ce"& _ 
+                "dula, [edad] = @edad, [genero] = @genero, [ubicacion] = @ubicacion, [celular] = "& _ 
+                "@celular, [correo] = @correo, [estado] = @estado, [id_equipo] = @id_equipo, [ate"& _ 
+                "ndido] = @atendido, [id_rastreo] = @id_rastreo WHERE (([id_paciente] = @Original"& _ 
+                "_id_paciente) AND ((@IsNull_nombre = 1 AND [nombre] IS NULL) OR ([nombre] = @Ori"& _ 
+                "ginal_nombre)) AND ((@IsNull_apellido = 1 AND [apellido] IS NULL) OR ([apellido]"& _ 
+                " = @Original_apellido)) AND ((@IsNull_cedula = 1 AND [cedula] IS NULL) OR ([cedu"& _ 
+                "la] = @Original_cedula)) AND ((@IsNull_edad = 1 AND [edad] IS NULL) OR ([edad] ="& _ 
+                " @Original_edad)) AND ((@IsNull_genero = 1 AND [genero] IS NULL) OR ([genero] = "& _ 
+                "@Original_genero)) AND ((@IsNull_ubicacion = 1 AND [ubicacion] IS NULL) OR ([ubi"& _ 
+                "cacion] = @Original_ubicacion)) AND ((@IsNull_celular = 1 AND [celular] IS NULL)"& _ 
+                " OR ([celular] = @Original_celular)) AND ((@IsNull_correo = 1 AND [correo] IS NU"& _ 
+                "LL) OR ([correo] = @Original_correo)) AND ((@IsNull_estado = 1 AND [estado] IS N"& _ 
+                "ULL) OR ([estado] = @Original_estado)) AND ((@IsNull_id_equipo = 1 AND [id_equip"& _ 
+                "o] IS NULL) OR ([id_equipo] = @Original_id_equipo)) AND ((@IsNull_atendido = 1 A"& _ 
+                "ND [atendido] IS NULL) OR ([atendido] = @Original_atendido)) AND ((@IsNull_id_ra"& _ 
+                "streo = 1 AND [id_rastreo] IS NULL) OR ([id_rastreo] = @Original_id_rastreo)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular,"& _ 
+                " correo, estado, id_equipo, atendido, id_rastreo FROM pacientes WHERE (id_pacien"& _ 
+                "te = @id_paciente)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@apellido", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "apellido", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -2976,6 +3069,8 @@ Namespace finalDes5DataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@correo", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "correo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@estado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "estado", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@id_equipo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_equipo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@atendido", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "atendido", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@id_rastreo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_rastreo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_id_paciente", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_paciente", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_nombre", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
@@ -2997,6 +3092,10 @@ Namespace finalDes5DataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_estado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "estado", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_id_equipo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_equipo", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_id_equipo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_equipo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_atendido", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "atendido", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_atendido", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "atendido", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_id_rastreo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_rastreo", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_id_rastreo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "id_rastreo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@id_paciente", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "id_paciente", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
         
@@ -3010,27 +3109,48 @@ Namespace finalDes5DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(3) {}
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(6) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, c"& _ 
-                "orreo, estado, id_equipo FROM dbo.pacientes"
+                "orreo, estado, id_equipo, atendido, id_rastreo FROM pacientes"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(1).Connection = Me.Connection
             Me._commandCollection(1).CommandText = "SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, c"& _ 
-                "orreo, estado, id_equipo FROM dbo.pacientes where estado= 'pendiente'"
+                "orreo, estado, id_equipo, atendido, id_rastreo"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM     pacientes"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE  (aten"& _ 
+                "dido = 'si')"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(2) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(2).Connection = Me.Connection
             Me._commandCollection(2).CommandText = "SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, c"& _ 
-                "orreo, estado, id_equipo"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM     pacientes"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE  (estado = 'pendiente')"
+                "orreo, estado, id_equipo, atendido, id_rastreo FROM pacientes WHERE (estado = 'p"& _ 
+                "endiente')"
             Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(3) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(3).Connection = Me.Connection
             Me._commandCollection(3).CommandText = "SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, c"& _ 
-                "orreo, estado, id_equipo"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM     pacientes"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE  (estado = 'pendiente')"
+                "orreo, estado, id_equipo, atendido, id_rastreo FROM pacientes WHERE (estado = 'p"& _ 
+                "endiente')"
             Me._commandCollection(3).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(4) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(4).Connection = Me.Connection
+            Me._commandCollection(4).CommandText = "SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, c"& _ 
+                "orreo, estado, id_equipo, atendido, id_rastreo FROM pacientes WHERE (estado = 'p"& _ 
+                "ositivo')"
+            Me._commandCollection(4).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(5) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(5).Connection = Me.Connection
+            Me._commandCollection(5).CommandText = "SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, c"& _ 
+                "orreo, estado, id_equipo, atendido, id_rastreo"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM     pacientes"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE  (aten"& _ 
+                "dido = 'no')"
+            Me._commandCollection(5).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(6) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(6).Connection = Me.Connection
+            Me._commandCollection(6).CommandText = "SELECT id_paciente, nombre, apellido, cedula, edad, genero, ubicacion, celular, c"& _ 
+                "orreo, estado, id_equipo, atendido, id_rastreo FROM pacientes WHERE (estado = 'p"& _ 
+                "ositivo')"
+            Me._commandCollection(6).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3061,7 +3181,7 @@ Namespace finalDes5DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillBy(ByVal dataTable As finalDes5DataSet.pacientesDataTable) As Integer
+        Public Overloads Overridable Function Atendidos(ByVal dataTable As finalDes5DataSet.pacientesDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(1)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -3074,7 +3194,7 @@ Namespace finalDes5DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillBy1(ByVal dataTable As finalDes5DataSet.pacientesDataTable) As Integer
+        Public Overloads Overridable Function FillBy(ByVal dataTable As finalDes5DataSet.pacientesDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(2)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -3087,8 +3207,47 @@ Namespace finalDes5DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillBy2(ByVal dataTable As finalDes5DataSet.pacientesDataTable) As Integer
+        Public Overloads Overridable Function FillBy1(ByVal dataTable As finalDes5DataSet.pacientesDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(3)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillBy2(ByVal dataTable As finalDes5DataSet.pacientesDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(4)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function NoAtendidos(ByVal dataTable As finalDes5DataSet.pacientesDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(5)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function Positivos(ByVal dataTable As finalDes5DataSet.pacientesDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(6)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
             End If
@@ -3128,7 +3287,7 @@ Namespace finalDes5DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_id_paciente As Integer, ByVal Original_nombre As String, ByVal Original_apellido As String, ByVal Original_cedula As String, ByVal Original_edad As Global.System.Nullable(Of Integer), ByVal Original_genero As String, ByVal Original_ubicacion As String, ByVal Original_celular As String, ByVal Original_correo As String, ByVal Original_estado As String, ByVal Original_id_equipo As Global.System.Nullable(Of Integer)) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_id_paciente As Integer, ByVal Original_nombre As String, ByVal Original_apellido As String, ByVal Original_cedula As String, ByVal Original_edad As Global.System.Nullable(Of Integer), ByVal Original_genero As String, ByVal Original_ubicacion As String, ByVal Original_celular As String, ByVal Original_correo As String, ByVal Original_estado As String, ByVal Original_id_equipo As Global.System.Nullable(Of Integer), ByVal Original_atendido As String, ByVal Original_id_rastreo As Global.System.Nullable(Of Integer)) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_id_paciente,Integer)
             If (Original_nombre Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
@@ -3200,6 +3359,20 @@ Namespace finalDes5DataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(19).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(20).Value = Global.System.DBNull.Value
             End If
+            If (Original_atendido Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(21).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(22).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(21).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(22).Value = CType(Original_atendido,String)
+            End If
+            If (Original_id_rastreo.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(23).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(24).Value = CType(Original_id_rastreo.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(23).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(24).Value = Global.System.DBNull.Value
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3219,7 +3392,7 @@ Namespace finalDes5DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal nombre As String, ByVal apellido As String, ByVal cedula As String, ByVal edad As Global.System.Nullable(Of Integer), ByVal genero As String, ByVal ubicacion As String, ByVal celular As String, ByVal correo As String, ByVal estado As String, ByVal id_equipo As Global.System.Nullable(Of Integer)) As Integer
+        Public Overloads Overridable Function Insert(ByVal nombre As String, ByVal apellido As String, ByVal cedula As String, ByVal edad As Global.System.Nullable(Of Integer), ByVal genero As String, ByVal ubicacion As String, ByVal celular As String, ByVal correo As String, ByVal estado As String, ByVal id_equipo As Global.System.Nullable(Of Integer), ByVal atendido As String, ByVal id_rastreo As Global.System.Nullable(Of Integer)) As Integer
             If (nombre Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
@@ -3270,6 +3443,16 @@ Namespace finalDes5DataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(9).Value = Global.System.DBNull.Value
             End If
+            If (atendido Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(10).Value = CType(atendido,String)
+            End If
+            If (id_rastreo.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(11).Value = CType(id_rastreo.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(11).Value = Global.System.DBNull.Value
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3300,6 +3483,8 @@ Namespace finalDes5DataSetTableAdapters
                     ByVal correo As String,  _
                     ByVal estado As String,  _
                     ByVal id_equipo As Global.System.Nullable(Of Integer),  _
+                    ByVal atendido As String,  _
+                    ByVal id_rastreo As Global.System.Nullable(Of Integer),  _
                     ByVal Original_id_paciente As Integer,  _
                     ByVal Original_nombre As String,  _
                     ByVal Original_apellido As String,  _
@@ -3311,6 +3496,8 @@ Namespace finalDes5DataSetTableAdapters
                     ByVal Original_correo As String,  _
                     ByVal Original_estado As String,  _
                     ByVal Original_id_equipo As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_atendido As String,  _
+                    ByVal Original_id_rastreo As Global.System.Nullable(Of Integer),  _
                     ByVal id_paciente As Integer) As Integer
             If (nombre Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
@@ -3362,78 +3549,102 @@ Namespace finalDes5DataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
             End If
-            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_id_paciente,Integer)
-            If (Original_nombre Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
+            If (atendido Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_nombre,String)
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(atendido,String)
             End If
-            If (Original_apellido Is Nothing) Then
+            If (id_rastreo.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(id_rastreo.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_id_paciente,Integer)
+            If (Original_nombre Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(13).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(14).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_apellido,String)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_nombre,String)
             End If
-            If (Original_cedula Is Nothing) Then
+            If (Original_apellido Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(15).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(15).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(Original_cedula,String)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(Original_apellido,String)
             End If
-            If (Original_edad.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(Original_edad.Value,Integer)
-            Else
+            If (Original_cedula Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(17).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(18).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(Original_cedula,String)
             End If
-            If (Original_genero Is Nothing) Then
+            If (Original_edad.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(Original_edad.Value,Integer)
+            Else
                 Me.Adapter.UpdateCommand.Parameters(19).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(20).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(Original_genero,String)
             End If
-            If (Original_ubicacion Is Nothing) Then
+            If (Original_genero Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(21).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(22).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(21).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(Original_ubicacion,String)
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(Original_genero,String)
             End If
-            If (Original_celular Is Nothing) Then
+            If (Original_ubicacion Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(23).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(24).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(23).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(Original_celular,String)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(Original_ubicacion,String)
             End If
-            If (Original_correo Is Nothing) Then
+            If (Original_celular Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(25).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(26).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(25).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(Original_correo,String)
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(Original_celular,String)
             End If
-            If (Original_estado Is Nothing) Then
+            If (Original_correo Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(27).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(28).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(27).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(Original_estado,String)
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(Original_correo,String)
             End If
-            If (Original_id_equipo.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(Original_id_equipo.Value,Integer)
-            Else
+            If (Original_estado Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(29).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(30).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(Original_estado,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(31).Value = CType(id_paciente,Integer)
+            If (Original_id_equipo.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(Original_id_equipo.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(32).Value = Global.System.DBNull.Value
+            End If
+            If (Original_atendido Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(34).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(Original_atendido,String)
+            End If
+            If (Original_id_rastreo.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(35).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(36).Value = CType(Original_id_rastreo.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(35).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(36).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(37).Value = CType(id_paciente,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3464,6 +3675,8 @@ Namespace finalDes5DataSetTableAdapters
                     ByVal correo As String,  _
                     ByVal estado As String,  _
                     ByVal id_equipo As Global.System.Nullable(Of Integer),  _
+                    ByVal atendido As String,  _
+                    ByVal id_rastreo As Global.System.Nullable(Of Integer),  _
                     ByVal Original_id_paciente As Integer,  _
                     ByVal Original_nombre As String,  _
                     ByVal Original_apellido As String,  _
@@ -3474,8 +3687,10 @@ Namespace finalDes5DataSetTableAdapters
                     ByVal Original_celular As String,  _
                     ByVal Original_correo As String,  _
                     ByVal Original_estado As String,  _
-                    ByVal Original_id_equipo As Global.System.Nullable(Of Integer)) As Integer
-            Return Me.Update(nombre, apellido, cedula, edad, genero, ubicacion, celular, correo, estado, id_equipo, Original_id_paciente, Original_nombre, Original_apellido, Original_cedula, Original_edad, Original_genero, Original_ubicacion, Original_celular, Original_correo, Original_estado, Original_id_equipo, Original_id_paciente)
+                    ByVal Original_id_equipo As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_atendido As String,  _
+                    ByVal Original_id_rastreo As Global.System.Nullable(Of Integer)) As Integer
+            Return Me.Update(nombre, apellido, cedula, edad, genero, ubicacion, celular, correo, estado, id_equipo, atendido, id_rastreo, Original_id_paciente, Original_nombre, Original_apellido, Original_cedula, Original_edad, Original_genero, Original_ubicacion, Original_celular, Original_correo, Original_estado, Original_id_equipo, Original_atendido, Original_id_rastreo, Original_id_paciente)
         End Function
     End Class
     

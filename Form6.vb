@@ -4,7 +4,7 @@ Public Class frmResumen
     Dim cadena As String
 
     Private Sub btnRetroceder_Click(sender As Object, e As EventArgs) Handles btnRetroceder.Click
-        Me.Hide()
+        Me.Close()
         frmMenu.Show()
     End Sub
 
