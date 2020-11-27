@@ -64,14 +64,6 @@ C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\bin\Debug\PF_Eq01_tema.pdb
 C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\bin\Debug\PF_Eq01_tema.xml
 C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.vbprojAssemblyReference.cache
 C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.frmMenu.resources
-C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.frmRegistroPaciente.resources
-C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.frmListaEspera.resources
-C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.frmListaPositivos.resources
-C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.frmListaNegativos.resources
-C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.frmResumen.resources
-C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.frmRastreo.resources
-C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.frmReporte.resources
-C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.frmRecuperados.resources
 C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.Resources.resources
 C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.vbproj.GenerateResource.cache
 C:\Users\Usuario\VisualBasicProjects\DiseñoDes8\obj\Debug\PF_Eq01_tema.vbproj.CoreCompileInputs.cache

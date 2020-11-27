@@ -32,11 +32,6 @@
         pnlRecuperados.Visible = False
     End Sub
 
-    Private Sub btnRastreo_Click(sender As Object, e As EventArgs)
-        Me.Hide()
-        frmRastreo.Show()
-    End Sub
-
     Private Sub btnListaRecuperados_Click(sender As Object, e As EventArgs) Handles btnListaRecuperados.Click
         pnlRegistrar.Visible = True
         pnlEspera.Visible = True
